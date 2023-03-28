@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CgClose } from "react-icons/cg";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
@@ -18,10 +19,10 @@ const Navbar = () => {
     <div className="fixed w-full h-20 shadow-2xl shadow-[#E1DD20] z-[100]">
       <div className="flex justify-between items-center w-full h-full px-16">
         <Image
-          src="/../public/assets/maxiturchet.png"
+          src='/../public/assets/maxiturchet.png'
           alt="logo"
           width="90"
-          height='55'
+          height="55"
         />
         <div>
           <ul className="hidden md:flex pr-10">
@@ -51,20 +52,27 @@ const Navbar = () => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden text-[#fff] hover:text-[#E1DD20]">
+          <div
+            onClick={handleNav}
+            className="md:hidden text-[#fff] hover:text-[#E1DD20]"
+          >
             <RxHamburgerMenu size={25} />
           </div>
         </div>
         <div className="hidden md:flex">
-          <Link href='/'>
-            <button className="w-[100%] text-[#E1DD20] uppercase rounded-1 w-20 h-[40px] border-solid border-2 border-[#E1DD20]">
+          <Link href="/">
+            <button className="w-[100%] text-[#E1DD20] uppercase rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#E1DD20]">
               GET CV
             </button>
           </Link>
         </div>
       </div>
 
-      <div className={nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : "" }>
+      <div
+        className={
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70" : ""
+        }
+      >
         <div
           className={
             nav
@@ -78,15 +86,17 @@ const Navbar = () => {
                 src="/../public/assets/maxiturchet.png"
                 alt="logo"
                 width="90"
-                height='55'
+                height="55"
               />
             </div>
             <div className="rounded-full shadow-lg shadow-black p-3 cursor-pointer text-[#fff] hover:text-[#E1DD20]">
-              <CgClose onClick={handleNav} size={20}  />
+              <CgClose onClick={handleNav} size={20} />
             </div>
           </div>
           <div className="border-b border-[#E1DD20] my-4">
-            <p className="w-[85%] md:w-[90%] py-4 text-[#E1DD20]">Let's solved problems.</p>
+            <p className="w-[85%] md:w-[90%] py-4 text-[#E1DD20]">
+              Let's solved problems.
+            </p>
           </div>
           <div className="py-6 flex-col">
             <ul className="uppercase text-[#fff]">
@@ -129,7 +139,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;

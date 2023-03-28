@@ -1,5 +1,8 @@
 import React from "react";
 import Link from "next/link";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
+import { BsPersonLinesFill } from "react-icons/bs";
 
 const Main = () => {
   return (
@@ -20,10 +23,24 @@ const Main = () => {
               <span className="text-[#E1DD20]">Saladillo</span>
             </Link>
             , Buenos Aires, Argentina. After a failed experience in Filmmaking I
-            discovered that what I really like to do is{" "}
-            <span className="text-[#E1DD20]">to solve problems</span> through
+            discovered that what I really like to do is 
+            <span className="text-[#E1DD20]"> to solve problems</span> through
             technology.
           </p>
+          <div className="sm:max-w-[330px] flex items-center justify-between max-w-[250px] m-auto py-4">
+            <div className="sm:p-6 text-[#fff] cursor-pointer rounded-full shadow-lg shadow-black p-3 cursor pointer hover:scale-110 hover:text-[#E1DD20]">
+              <FaLinkedinIn />
+            </div>
+            <div className="sm:p-6 text-[#fff] cursor-pointer rounded-full shadow-lg shadow-black p-3 cursor pointer hover:scale-110 hover:text-[#E1DD20]">
+              <FaGithub />
+            </div>
+            <div className="sm:p-6 text-[#fff] cursor-pointer rounded-full shadow-lg shadow-black p-3 cursor pointer hover:scale-110 hover:text-[#E1DD20]">
+              <AiOutlineMail />
+            </div>
+            <div className="sm:p-6 text-[#fff] cursor-pointer rounded-full shadow-lg shadow-black p-3 cursor pointer hover:scale-110 hover:text-[#E1DD20]">
+              <BsPersonLinesFill />
+            </div>
+          </div>
         </div>
       </div>
     </div>
