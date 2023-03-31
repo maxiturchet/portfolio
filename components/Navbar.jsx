@@ -4,9 +4,7 @@ import React, { useState } from "react";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CgClose } from "react-icons/cg";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsPersonLinesFill } from "react-icons/bs";
+import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -128,10 +126,10 @@ const Navbar = () => {
                   <FaGithub />
                 </div>
                 <div className="rounded-full shadow-lg shadow-black p-3 cursor pointer hover:scale-110 hover:text-[#E1DD20]">
-                  <AiOutlineMail />
+                  <FaTwitter />
                 </div>
                 <div className="rounded-full shadow-lg shadow-black p-3 cursor pointer hover:scale-110 hover:text-[#E1DD20]">
-                  <BsPersonLinesFill />
+                  <FaInstagram />
                 </div>
               </div>
             </div>

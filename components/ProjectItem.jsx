@@ -10,6 +10,7 @@ const ProjectItem = ({title, backgroundImg, tech, projectUrl}) => {
         src={backgroundImg}
         alt='youtubeClone'
         width=''
+        height='400'
       />
       <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
         <h3 className='text-2xl tracking-wider text-center'>{title}</h3>
