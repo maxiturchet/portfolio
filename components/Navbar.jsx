@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-2xl shadow-[#E1DD20] z-[100]">
+    <div className="fixed w-full h-20 shadow-lg shadow-[#E1DD20] z-[100]">
       <div className="flex justify-between items-center w-full h-full px-16">
         <Image
           src='/../public/assets/maxiturchet.png'
@@ -22,30 +22,30 @@ const Navbar = () => {
           width="90"
           height="55"
         />
-        <div>
-          <ul className="hidden md:flex pr-10">
+        <div className="md:w-2/3 max-w-[1100px]">
+          <ul className="hidden md:flex md:justify-around m-auto">
             <Link href="/">
-              <li className="ml-10 text-sm uppercase hover:border-b border-[#E1DD20] text-[#fff] hover:text-[#E1DD20]">
+              <li className=" text-sm uppercase hover:border-b border-[#E1DD20] text-[#fff] hover:text-[#E1DD20]">
                 Home
               </li>
             </Link>
             <Link href="/about">
-              <li className="ml-10 text-sm uppercase hover:border-b border-[#E1DD20] text-[#fff] hover:text-[#E1DD20]">
+              <li className=" text-sm uppercase hover:border-b border-[#E1DD20] text-[#fff] hover:text-[#E1DD20]">
                 About
               </li>
             </Link>
             <Link href="/projects">
-              <li className="ml-10 text-sm uppercase hover:border-b border-[#E1DD20] text-[#fff] hover:text-[#E1DD20]">
+              <li className=" text-sm uppercase hover:border-b border-[#E1DD20] text-[#fff] hover:text-[#E1DD20]">
                 Projects
               </li>
             </Link>
             <Link href="/skills">
-              <li className="ml-10 text-sm uppercase hover:border-b border-[#E1DD20] text-[#fff] hover:text-[#E1DD20]">
+              <li className=" text-sm uppercase hover:border-b border-[#E1DD20] text-[#fff] hover:text-[#E1DD20]">
                 Skills
               </li>
             </Link>
             <Link href="/contact">
-              <li className="ml-10 text-sm uppercase hover:border-b border-[#E1DD20] text-[#fff] hover:text-[#E1DD20]">
+              <li className="text-sm uppercase hover:border-b border-[#E1DD20] text-[#fff] hover:text-[#E1DD20]">
                 Contact
               </li>
             </Link>

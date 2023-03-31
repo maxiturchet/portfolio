@@ -5,7 +5,7 @@ import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 const Main = () => {
   return (
     <div className="m-auto w-screen max-w-[1200px] px-[100px] lg:px-[150px]">
-      <div className="max-w-[1000px] w-full h-screen m-auto  flex justify-center items-center">
+      <div className="max-w-[1100px] w-full h-screen m-auto  flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-white">
             LET'S MAKE LIFE EASIER
@@ -27,7 +27,7 @@ const Main = () => {
           </p>
         </div>
       </div>
-      <div className="w-full max-[800px]:hidden">
+      <div className="w-full max-[768px]:hidden">
         <div className="fixed flex flex-col justify-end items-center left-0 lg:left-5 bottom-0 px-5 ">
           <ul className="m-auto flex flex-col h-56 lg:h-56 sm:max-w-[330px] flex items-center justify-between m-auto">
             

@@ -5,7 +5,7 @@ import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 const Contact = () => {
   return (
     <div className="w-full max-w-[1600px] lg:h-screen px-[100px] lg:px-[150px] m-auto">
-      <div className="max-w-[1200px] m-auto py-16 w-full">
+      <div className="max-w-[1100px] m-auto py-16 w-full">
         <p className="text-xl text-[#E1DD20] tracking-widest uppercase text-[#E1DD20]">
           Contact
         </p>

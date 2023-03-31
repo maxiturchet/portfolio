@@ -15,7 +15,7 @@ const About = () => {
 
   return (
     <div className='w-screen h-screen m-auto max-w-[1600px] px-[100px] lg:px-[150px]'>
-      <div className='w-full m-auto max-w-[1200px] h-screen flex flex-col items-center justify-around text-[#fff] lg:flex lg:flex-row '>
+      <div className='w-full  h-screen flex flex-col items-center justify-between text-[#fff] lg:flex lg:flex-row '>
         <div className='w-full p-16 lg:w-1/2'>
           <p className='uppercase text-xl tracking-widest text-[#E1DD20]'>About</p>
           <h2 className='py-4'>Who I Am</h2>
