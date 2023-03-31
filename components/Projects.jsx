@@ -8,13 +8,13 @@ import taskapp from "../public/assets/taskapp.png";
 
 const Projects = () => {
   return (
-    <div className="w-full max-w-[1600px] px-[100px] lg:px-[150px] py-16">
+    <div className="w-full max-w-[1600px] px-[100px] lg:px-[150px] py-16 m-auto">
       <div className="max-w-[1200px] m-auto">
         <p className="text-xl tracking-widest uppercase text-[#E1DD20]">
           Projects
         </p>
         <h2 className="py-10 text-white">What I've Built</h2>
-        <div className="grid md:grid-cols-2 gap-8 ">
+        <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="Youtube Clone"
             backgroundImg={youtubeClone}
