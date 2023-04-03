@@ -6,10 +6,11 @@ import calculator from "../public/assets/calculator.png";
 import gym from "../public/assets/gym.jpg";
 import taskapp from "../public/assets/taskapp.png";
 
+
 const Projects = () => {
   return (
-    <div className="w-full max-w-[1600px] px-[100px] lg:px-[150px] py-16 m-auto">
-      <div className="max-w-[1100px] m-auto">
+    <div className="w-full px-[100px] lg:px-[150px] py-16 m-auto  border-y border-[#E1DD20] bg-[url('../public/assets/Curve2.svg')] bg-no-repeat bg-cover">
+    <div className="max-w-[1000px] m-auto">
         <p className="text-xl tracking-widest uppercase text-[#E1DD20]">
           Projects
         </p>

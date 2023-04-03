@@ -14,7 +14,7 @@ const About = () => {
   }
 
   return (
-    <div className='w-screen h-screen m-auto max-w-[1600px] px-[100px] lg:px-[150px]'>
+    <div className='w-screen h-screen px-[100px] lg:px-[150px] bg-[url("../public/assets/Wave3.svg")] bg-no-repeat bg-cover'>
       <div className='w-full  h-screen flex flex-col items-center justify-between text-[#fff] lg:flex lg:flex-row '>
         <div className='w-full p-16 lg:w-1/2'>
           <p className='uppercase text-xl tracking-widest text-[#E1DD20]'>About</p>
