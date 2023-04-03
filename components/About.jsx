@@ -14,16 +14,16 @@ const About = () => {
   }
 
   return (
-    <div className='w-screen h-screen px-[100px] lg:px-[150px] bg-[url("../public/assets/Wave3.svg")] bg-no-repeat bg-cover'>
-      <div className='w-full  h-screen flex flex-col items-center justify-between text-[#fff] lg:flex lg:flex-row '>
+    <div className='w-full h-screen px-[100px] lg:px-[150px] bg-[url("../public/assets/Wave3.svg")] bg-no-repeat bg-cover'>
+      <div className='max-w-[1200px] h-screen m-auto flex flex-col items-center justify-between text-[#fff] lg:flex lg:flex-row '>
         <div className='w-full p-16 lg:w-1/2'>
           <p className='uppercase text-xl tracking-widest text-[#E1DD20]'>About</p>
           <h2 className='py-4'>Who I Am</h2>
-          <p className='py-2 text-gray-300'>
+          <p className='text-lg py-2 text-gray-300'>
           I'm a Front-End Developer located in Argentina. My interest in web development started back in 2020 when I moved to Saladillo and decided to take a Fullstack developer course. Since then I keep improving myself to get my first IT job.
           </p>
 
-          <p className='py-2 text-gray-300'>Well-organised person, problem solver, independent employee with high attention to detail. Fan of chess, fútbol(soccer) and literature. A family person and father of one boy.</p>
+          <p className='text-lg py-2 text-gray-300'>Well-organised person, problem solver, independent employee with high attention to detail. Fan of chess, fútbol(soccer) and literature. A family person and father of one boy.</p>
 
           <p className='py-2 underline cursor-pointer text-[#E1DD20]'>
             Check out some of my latest projects.

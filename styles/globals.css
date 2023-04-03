@@ -4,7 +4,7 @@
 
 @layer base {
   body{
-    @apply bg-[#111] scrollbar scrollbar-thumb-[#E1DD20] scrollbar-thin
+    @apply bg-[#000] scrollbar scrollbar-thumb-[#E1DD20] scrollbar-thin
   }
 
   h1,h2,h3,h4,h5,h6{

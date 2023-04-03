@@ -9,13 +9,13 @@ import taskapp from "../public/assets/taskapp.png";
 
 const Projects = () => {
   return (
-    <div className="w-full px-[100px] lg:px-[150px] py-16 m-auto  border-y border-[#E1DD20] bg-[url('../public/assets/Curve2.svg')] bg-no-repeat bg-cover">
-    <div className="max-w-[1000px] m-auto">
+    <div className="w-full bg-black px-[100px] lg:px-[150px] py-16 m-auto border-y-2 border-[#222]">
+    <div className="max-w-[1200px] m-auto">
         <p className="text-xl tracking-widest uppercase text-[#E1DD20]">
           Projects
         </p>
         <h2 className="py-10 text-white">What I've Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-10">
           <ProjectItem
             title="Youtube Clone"
             backgroundImg={youtubeClone}
