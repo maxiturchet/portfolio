@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CgClose } from "react-icons/cg";
@@ -8,20 +8,38 @@ import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false)
 
+  useEffect(() => {
+    const handleShadow = () => {
+      if(window.scrollY >= 90){
+        setShadow(true)
+      }else{
+        setShadow(false)
+      }
+    }
+    window.addEventListener('scroll', handleShadow)
+  }, [])
+  
+  
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-lg shadow-[#E1DD20] z-[100]">
+    <div className={
+            shadow 
+            ? "fixed w-full h-20 shadow-lg shadow-[#E1DD20] z-[100]"
+            : "fixed w-full h-20 z-[100]"}>
       <div className="flex justify-between items-center w-full h-full px-16 ">
-        <Image
-          src='/../public/assets/maxiturchet.png'
-          alt="logo"
-          width="100"
-          height="55"
-        />
+        <Link href='/'>
+          <Image
+            src='/../public/assets/maxiturchet.png'
+            alt="logo"
+            width="100"
+            height="55"
+          />
+        </Link>
         <div className="md:w-2/3 max-w-[1100px]">
           <ul className="hidden md:flex md:justify-around m-auto">
             <Link href="/">
@@ -29,12 +47,12 @@ const Navbar = () => {
                 Home
               </li>
             </Link>
-            <Link href="/about">
+            <Link href="/#about">
               <li className=" text-md uppercase text-[#fff] hover:text-[#E1DD20]">
                 About
               </li>
             </Link>
-            <Link href="/projects">
+            <Link href="/#projects">
               <li className=" text-md uppercase text-[#fff] hover:text-[#E1DD20]">
                 Projects
               </li>
@@ -44,7 +62,7 @@ const Navbar = () => {
                 Skills
               </li>
             </Link>
-            <Link href="/contact">
+            <Link href="/#contact">
               <li className="text-md uppercase text-[#fff] hover:text-[#E1DD20]">
                 Contact
               </li>
@@ -100,19 +118,19 @@ const Navbar = () => {
             <div className="py-6 flex-col">
               <ul className="uppercase text-[#fff]">
                 <Link href="/">
-                  <li className="py-6 text-sm">Home</li>
+                  <li onClick={()=> setNav(false)} className="py-6 text-sm">Home</li>
                 </Link>
-                <Link href="/">
-                  <li className="py-6 text-sm">About</li>
+                <Link href="/#about">
+                  <li onClick={()=> setNav(false)} className="py-6 text-sm">About</li>
                 </Link>
-                <Link href="/">
-                  <li className="py-6 text-sm">Projects</li>
+                <Link href="/#projects">
+                  <li onClick={()=> setNav(false)} className="py-6 text-sm">Projects</li>
                 </Link>
-                <Link href="/">
-                  <li className="py-6 text-sm">Skills</li>
+                <Link href="/#skills">
+                  <li onClick={()=> setNav(false)} className="py-6 text-sm">Skills</li>
                 </Link>
-                <Link href="/">
-                  <li className="py-6 text-sm">Contact</li>
+                <Link href="/#contact">
+                  <li onClick={()=> setNav(false)} className="py-6 text-sm">Contact</li>
                 </Link>
               </ul>
             </div>

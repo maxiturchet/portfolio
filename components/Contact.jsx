@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="w-full lg:h-screen px-[100px] lg:px-[150px] bg-[url('../public/assets/WorldMap.svg')] bg-no-repeat bg-cover">
+    <div id='contact' className="w-full lg:h-screen px-[100px] lg:px-[150px] bg-[url('../public/assets/WorldMap.svg')] bg-no-repeat bg-cover">
       <div className="max-w-[1100px] m-auto w-full pt-10">
         <p className="text-xl text-[#E1DD20] tracking-widest uppercase text-[#E1DD20]">
           Contact

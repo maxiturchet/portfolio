@@ -14,8 +14,8 @@ const About = () => {
   }
 
   return (
-    <div className='w-full h-screen px-[100px] lg:px-[150px] bg-[url("../public/assets/Wave3.svg")] bg-no-repeat bg-cover'>
-      <div className='max-w-[1200px] h-screen m-auto flex flex-col items-center justify-between text-[#fff] lg:flex lg:flex-row '>
+    <div id='about' className='w-full h-screen px-[100px] lg:px-[150px] bg-[url("../public/assets/Wave3.svg")] bg-no-repeat bg-cover'>
+      <div className='max-w-[1200px] h-screen m-auto flex flex-col items-center justify-around lg:justify-between text-[#fff] lg:flex lg:flex-row'>
         <div className='w-full p-16 lg:w-1/2'>
           <p className='uppercase text-xl tracking-widest text-[#E1DD20]'>About</p>
           <h2 className='py-4'>Who I Am</h2>

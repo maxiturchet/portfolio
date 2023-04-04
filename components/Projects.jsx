@@ -5,11 +5,14 @@ import gifos from "../public/assets/gifos.jpg";
 import calculator from "../public/assets/calculator.png";
 import gym from "../public/assets/gym.jpg";
 import taskapp from "../public/assets/taskapp.png";
+import { FaReact } from 'react-icons/fa'
+import { SiJavascript, SiTailwindcss, SiCsswizardry, SiMui } from 'react-icons/si'
+
 
 
 const Projects = () => {
   return (
-    <div className="w-full bg-black px-[100px] lg:px-[150px] py-16 m-auto border-y-2 border-[#222]">
+    <div id='projects' className="w-full bg-black px-[100px] lg:px-[150px] py-16 m-auto border-y-2 border-[#222]">
     <div className="max-w-[1200px] m-auto">
         <p className="text-xl tracking-widest uppercase text-[#E1DD20]">
           Projects
@@ -20,33 +23,36 @@ const Projects = () => {
             title="Youtube Clone"
             backgroundImg={youtubeClone}
             projectUrl="/youtubeClone"
-            tech='React JS'
+            icon={<FaReact />}
+            icon2={<SiMui />}
           />
           <ProjectItem
             title="Gym Exercise"
             backgroundImg={gym}
             projectUrl="/gym"
-            tech='React JS'
-
-          />
-          <ProjectItem
-            title="Gif finder"
-            backgroundImg={gifos}
-            projectUrl="/gifos"
-            tech='JavaScript'
+            icon={<FaReact />}
+            icon2={<SiMui />}
           />
           <ProjectItem
             title="To do list/ Events"
             backgroundImg={taskapp}
             projectUrl="/taskapp"
-            tech='React JS'
-
+            icon={<FaReact />}
+            icon2={<SiTailwindcss />}
           />
           <ProjectItem
             title="Calculator"
             backgroundImg={calculator}
             projectUrl="/youtubeClone"
-            tech='React JS'
+            icon={<FaReact />}
+            icon2={<SiCsswizardry />}
+          />
+          <ProjectItem
+            title="Gif finder"
+            backgroundImg={gifos}
+            projectUrl="/gifos"
+            icon={<SiJavascript />}
+            icon2={<SiCsswizardry />}
           />
         </div>
       </div>

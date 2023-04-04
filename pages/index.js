@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import Navbar from '@/components/Navbar'
 import Main from '@/components/Main'
 import About from '@/components/About'
 import Projects from '@/components/Projects'
@@ -20,7 +19,6 @@ export default function Home() {
         <link rel="icon" href="/assets/maxiturchet.png" />
       </Head>
 
-      <Navbar />
       <Main />
       <About />
       <Projects />

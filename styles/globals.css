@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer base {
   body{
     @apply bg-[#000] scrollbar scrollbar-thumb-[#E1DD20] scrollbar-thin
