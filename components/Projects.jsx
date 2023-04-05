@@ -3,7 +3,7 @@ import ProjectItem from "./ProjectItem";
 import youtubeClone from "../public/assets/youtube-clone.jpg";
 import gifos from "../public/assets/gifos.jpg";
 import calculator from "../public/assets/calculator.png";
-import gym from "../public/assets/gym.jpg";
+import gym from "../public/assets/gym.png";
 import taskapp from "../public/assets/taskapp.png";
 import { FaReact } from 'react-icons/fa'
 import { SiJavascript, SiTailwindcss, SiCsswizardry, SiMui } from 'react-icons/si'
@@ -43,7 +43,7 @@ const Projects = () => {
           <ProjectItem
             title="Calculator"
             backgroundImg={calculator}
-            projectUrl="/youtubeClone"
+            projectUrl="/calculator"
             icon={<FaReact />}
             icon2={<SiCsswizardry />}
           />

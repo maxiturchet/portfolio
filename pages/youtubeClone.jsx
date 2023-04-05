@@ -9,6 +9,8 @@ const youtubeClone = () => {
     <ProjectDetail
       title='Youtube Clone'
       bgimage={youtubeImg}
+      urlCode='https://github.com/maxiturchet/youtube_clone/'
+      urlDemo='https://maxiturchet.github.io/youtube_clone/'
       icon={<FaReact />}
       icon2={<SiMui />}
       tech='React JS'

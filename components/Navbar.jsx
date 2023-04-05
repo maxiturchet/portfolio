@@ -8,33 +8,35 @@ import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false)
+  const [shadow, setShadow] = useState(false);
 
   useEffect(() => {
     const handleShadow = () => {
-      if(window.scrollY >= 90){
-        setShadow(true)
-      }else{
-        setShadow(false)
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
       }
-    }
-    window.addEventListener('scroll', handleShadow)
-  }, [])
-  
-  
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
+
   const handleNav = () => {
     setNav(!nav);
   };
 
   return (
-    <div className={
-            shadow 
-            ? "fixed w-full h-20 shadow-lg shadow-[#E1DD20] z-[100]"
-            : "fixed w-full h-20 z-[100]"}>
+    <div
+      className={
+        shadow
+          ? "fixed w-full h-20 shadow-lg shadow-[#E1DD20] z-[100]"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
       <div className="flex justify-between items-center w-full h-full px-16 ">
-        <Link href='/'>
+        <Link href="/">
           <Image
-            src='/../public/assets/maxiturchet.png'
+            src="/../public/assets/maxiturchet.png"
             alt="logo"
             width="100"
             height="55"
@@ -118,19 +120,29 @@ const Navbar = () => {
             <div className="py-6 flex-col">
               <ul className="uppercase text-[#fff]">
                 <Link href="/">
-                  <li onClick={()=> setNav(false)} className="py-6 text-sm">Home</li>
+                  <li onClick={() => setNav(false)} className="py-6 text-sm">
+                    Home
+                  </li>
                 </Link>
                 <Link href="/#about">
-                  <li onClick={()=> setNav(false)} className="py-6 text-sm">About</li>
+                  <li onClick={() => setNav(false)} className="py-6 text-sm">
+                    About
+                  </li>
                 </Link>
                 <Link href="/#projects">
-                  <li onClick={()=> setNav(false)} className="py-6 text-sm">Projects</li>
+                  <li onClick={() => setNav(false)} className="py-6 text-sm">
+                    Projects
+                  </li>
                 </Link>
                 <Link href="/#skills">
-                  <li onClick={()=> setNav(false)} className="py-6 text-sm">Skills</li>
+                  <li onClick={() => setNav(false)} className="py-6 text-sm">
+                    Skills
+                  </li>
                 </Link>
                 <Link href="/#contact">
-                  <li onClick={()=> setNav(false)} className="py-6 text-sm">Contact</li>
+                  <li onClick={() => setNav(false)} className="py-6 text-sm">
+                    Contact
+                  </li>
                 </Link>
               </ul>
             </div>
