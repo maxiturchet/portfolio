@@ -36,7 +36,7 @@ const About = () => {
               : 'absolute shrink z-20 border-solid border-2 border-[#E1DD20] left-[-40px] top-[-40px] shadow-xl shadow-[#E1DD20] max-[715px]:w-[350px] max-[560px]:w-[300px] max-[440px]:w-[280px]'} >
             <Image 
               onMouseEnter={handleMouseEnter}
-              src='/../public/assets/yo.png'
+              src='../public/assets/yo.png'
               alt='yo'
               width='400'
               height='0'
@@ -45,7 +45,7 @@ const About = () => {
           <div className='absolute shrink z-10 border-solid border-2 border-[#E1DD20] left-[-40px] top-[-40px] shadow-xl shadow-[#E1DD20] max-[715px]:w-[350px] max-[560px]:w-[300px] max-[440px]:w-[280px]'>
             <Image
               onMouseLeave={handleMouseLeave} 
-              src='/../public/assets/hover.png'
+              src='../public/assets/hover.png'
               alt='yohover'
               width='400'
               height='0'
