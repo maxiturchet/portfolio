@@ -35,7 +35,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center w-full h-full px-16 ">
         <Link href="/">
           <Image
-            src="../public/assets/maxiturchet.png"
+            src="/assets/maxiturchet.png"
             alt="logo"
             width="100"
             height="55"

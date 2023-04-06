@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="flex flex-col justify-between items-center">
           <Image
             className="border-2 border-[#FBFF00]"
-            src="../public/assets/maxiturchet.png"
+            src="/assets/maxiturchet.png"
             width="100"
             height="0"
             alt="logo"
