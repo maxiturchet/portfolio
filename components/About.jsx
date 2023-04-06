@@ -20,7 +20,7 @@ const About = () => {
           <p className='uppercase text-xl tracking-widest text-[#E1DD20]'>About</p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='text-lg py-2 text-gray-300'>
-          I'm a Front-End Developer located in Argentina. My interest in web development started back in 2020 when I moved to Saladillo and decided to take a Fullstack developer course. Since then I keep improving myself to get my first IT job.
+          {`I'm a Front-End Developer located in Argentina. My interest in web development started back in 2020 when I moved to Saladillo and decided to take a Fullstack developer course. Since then I keep improving myself to get my first IT job.`}
           </p>
 
           <p className='text-lg py-2 text-gray-300'>Well-organised person, problem solver, independent employee with high attention to detail. Fan of chess, fútbol(soccer) and literature. A family person and father of one boy.</p>

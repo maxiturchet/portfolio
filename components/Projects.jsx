@@ -5,19 +5,25 @@ import gifos from "../public/assets/gifos.jpg";
 import calculator from "../public/assets/calculator.png";
 import gym from "../public/assets/gym.png";
 import taskapp from "../public/assets/taskapp.png";
-import { FaReact } from 'react-icons/fa'
-import { SiJavascript, SiTailwindcss, SiCsswizardry, SiMui } from 'react-icons/si'
-
-
+import { FaReact } from "react-icons/fa";
+import {
+  SiJavascript,
+  SiTailwindcss,
+  SiCsswizardry,
+  SiMui,
+} from "react-icons/si";
 
 const Projects = () => {
   return (
-    <div id='projects' className="w-full bg-black px-[100px] lg:px-[150px] py-16 m-auto border-y-2 border-[#222]">
-    <div className="max-w-[1200px] m-auto">
+    <div
+      id="projects"
+      className="w-full bg-black px-[100px] lg:px-[150px] py-16 m-auto border-y-2 border-[#222]"
+    >
+      <div className="max-w-[1200px] m-auto">
         <p className="text-xl tracking-widest uppercase text-[#E1DD20]">
           Projects
         </p>
-        <h2 className="py-10 text-white">What I've Built</h2>
+        <h2 className="py-10 text-white">{`What I've Built`}</h2>
         <div className="grid md:grid-cols-2 gap-10">
           <ProjectItem
             title="Youtube Clone"
