@@ -15,7 +15,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className='w-full  md:px-[100px] lg:px-[150px] bg-no-repeat bg-cover bg-fill bg-center py-10'
+      className="w-full  md:px-[100px] lg:px-[150px] bg-gradient-to-r from-teal-900 to-cyan-900 py-10"
     >
       <div className="max-w-[1200px] md:h-screen h-full m-auto flex flex-col items-center xl:justify-between justify-around text-[#fff] xl:flex xl:flex-row">
         <div className="w-full p-5 xl:pr-20">

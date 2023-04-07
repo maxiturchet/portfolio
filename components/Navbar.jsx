@@ -76,7 +76,7 @@ const Navbar = () => {
             <RxHamburgerMenu size={25} />
           </div>
         </div>
-          <a className="hidden md:flex text-[#64ffda] uppercase rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/40 shadow-xl shadow-black rounded-xl uppercase items-center justify-center" href='https://drive.google.com/uc?id=1Ks3K9BXHQz9cHNaIsEQt5axH86IfLU9N&export=download' download>GET CV</a>
+          <a className="hidden md:flex text-[#64ffda] uppercase rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/40 shadow-md shadow-black rounded-xl uppercase items-center justify-center" href='https://drive.google.com/uc?id=1Ks3K9BXHQz9cHNaIsEQt5axH86IfLU9N&export=download' download>GET CV</a>
       </div>
 
       <div
@@ -88,7 +88,7 @@ const Navbar = () => {
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[55%] md:w-[45%] h-screen bg-[#111] px-6 pt-1 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-6  ease-in duration-500"
+              : "fixed left-[-100%] top-0 p-6 ease-in duration-500"
           }
         >
           <div className="flex w-full items-center justify-between">
@@ -104,31 +104,31 @@ const Navbar = () => {
               <CgClose onClick={handleNav} size={20} />
             </div>
           </div>
-          <div className="h-[87%] flex flex-col justify-between">
+          <div className="h-[87%] flex flex-col justify-around">
             <div className="border-b border-[#64ffda] my-4">
-              <p className="w-[85%] md:w-[90%] py-4 text-[#64ffda]">
+              <p className="w-[85%] md:w-[90%] pb-4 text-[#64ffda]">
                 Let&apos;s solved problems.
               </p>
             </div>
-            <div className="py-6 flex-col">
+            <div className="py-2 sm:py-6 flex-col">
               <ul className="uppercase text-[#fff]">
                 <Link href="/">
-                  <li onClick={() => setNav(false)} className="py-6 text-sm">
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
                     Home
                   </li>
                 </Link>
                 <Link href="/#about">
-                  <li onClick={() => setNav(false)} className="py-6 text-sm">
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
                     About
                   </li>
                 </Link>
                 <Link href="/#projects">
-                  <li onClick={() => setNav(false)} className="py-6 text-sm">
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
                     Projects
                   </li>
                 </Link>
                 <Link href="/#skills">
-                  <li onClick={() => setNav(false)} className="py-6 text-sm">
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
                     Skills
                   </li>
                 </Link>
