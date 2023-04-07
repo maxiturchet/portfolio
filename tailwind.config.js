@@ -8,7 +8,10 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {},
+      animation: {},
+    },
   },
   plugins: [
     require('tailwind-scrollbar'),

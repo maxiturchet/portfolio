@@ -28,7 +28,7 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 shadow-md shadow-[#E1DD20] z-[100] ease-in-out duration-500"
+          ? "fixed w-full h-20 shadow-md shadow-[#64ffda] z-[100] ease-in-out duration-500"
           : "fixed w-full h-20 z-[100]"
       }
     >
@@ -44,39 +44,39 @@ const Navbar = () => {
         <div className="md:w-2/3 max-w-[1100px]">
           <ul className="hidden md:flex md:justify-around m-auto">
             <Link href="/">
-              <li className=" text-md uppercase text-[#fff] hover:text-[#FFF600] hover:translate-y-[-4px] ease-in-out duration-300">
+              <li className=" text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
                 Home
               </li>
             </Link>
             <Link href="/#about">
-              <li className=" text-md uppercase text-[#fff] hover:text-[#FFF600] hover:translate-y-[-4px] ease-in-out duration-300">
+              <li className=" text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
                 About
               </li>
             </Link>
             <Link href="/#projects">
-              <li className=" text-md uppercase text-[#fff] hover:text-[#FFF600] hover:translate-y-[-4px] ease-in-out duration-300">
+              <li className=" text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
                 Projects
               </li>
             </Link>
             <Link href="/skills">
-              <li className=" text-md uppercase text-[#fff] hover:text-[#FFF600] hover:translate-y-[-4px] ease-in-out duration-300">
+              <li className=" text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
                 Skills
               </li>
             </Link>
             <Link href="/#contact">
-              <li className="text-md uppercase text-[#fff] hover:text-[#FFF600] hover:translate-y-[-4px] ease-in-out duration-300">
+              <li className="text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
                 Contact
               </li>
             </Link>
           </ul>
           <div
             onClick={handleNav}
-            className="md:hidden text-[#fff] hover:text-[#E1DD20]"
+            className="md:hidden text-[#fff] hover:text-[#64ffda]"
           >
             <RxHamburgerMenu size={25} />
           </div>
         </div>
-          <a className="hidden md:flex text-[#FBFF00] uppercase rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#FBFF00] hover:bg-[#FBFF00]/40 shadow-xl shadow-black rounded-xl uppercase items-center justify-center" href='https://drive.google.com/uc?id=1Ks3K9BXHQz9cHNaIsEQt5axH86IfLU9N&export=download' download>GET CV</a>
+          <a className="hidden md:flex text-[#64ffda] uppercase rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/40 shadow-xl shadow-black rounded-xl uppercase items-center justify-center" href='https://drive.google.com/uc?id=1Ks3K9BXHQz9cHNaIsEQt5axH86IfLU9N&export=download' download>GET CV</a>
       </div>
 
       <div
@@ -105,8 +105,8 @@ const Navbar = () => {
             </div>
           </div>
           <div className="h-[87%] flex flex-col justify-between">
-            <div className="border-b border-[#E1DD20] my-4">
-              <p className="w-[85%] md:w-[90%] py-4 text-[#E1DD20]">
+            <div className="border-b border-[#64ffda] my-4">
+              <p className="w-[85%] md:w-[90%] py-4 text-[#64ffda]">
                 Let&apos;s solved problems.
               </p>
             </div>
@@ -140,7 +140,7 @@ const Navbar = () => {
               </ul>
             </div>
             <div>
-              <p className="uppercase tracking-widest text-[#E1DD20]">
+              <p className="uppercase tracking-widest text-[#64ffda]">
                 Let's Connect
               </p>
               <div className="flex items-center justify-around my-8 w-full text-[#fff] px-[5%]">

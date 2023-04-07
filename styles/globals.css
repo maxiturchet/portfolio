@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 @layer base {
   body{
-    @apply bg-[#000] scrollbar scrollbar-thumb-[#E1DD20] scrollbar-thin
+    @apply bg-[#000] scrollbar scrollbar-thumb-[#64ffda] scrollbar-thin
   }
 
   h1,h2,h3,h4,h5,h6{

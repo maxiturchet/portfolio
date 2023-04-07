@@ -23,27 +23,27 @@ const IconsSide = () => {
       
       <ul className="m-auto flex flex-col h-56 lg:h-56 sm:max-w-[330px] flex items-center justify-between m-auto">
         <Link href='https://www.linkedin.com/in/maxiturchet/'>
-          <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#FFF600]  hover:translate-y-[-4px] ease-in-out duration-300 p-5 lg:text-xl">
+          <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#64ffda]  hover:translate-y-[-4px] ease-in-out duration-300 p-5 lg:text-xl">
             <FaLinkedinIn />
           </div>
         </Link>
         <Link href='https://github.com/maxiturche'>
-          <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#FFF600] hover:translate-y-[-4px] ease-in-out duration-300 p-5 lg:text-xl">
+          <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 p-5 lg:text-xl">
             <FaGithub />
           </div>
         </Link>
         <Link href='https://twitter.com/maxi_turchet'>
-          <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#FFF600] hover:translate-y-[-4px] ease-in-out duration-300 p-5 lg:text-xl">
+          <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 p-5 lg:text-xl">
             <FaTwitter />
           </div>
         </Link>
         <Link href='https://www.instagram.com/maxiturchet/'>
-          <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#FFF600] hover:translate-y-[-4px] ease-in-out duration-300 p-5 lg:text-xl">
+          <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 p-5 lg:text-xl">
             <FaInstagram />
           </div>
         </Link>
       </ul>
-      <div className="w-[1px] h-[90px] bg-[#FFF600] mt-5">
+      <div className="w-[1px] h-[90px] bg-[#64ffda] mt-5">
           
       </div>
     </div>

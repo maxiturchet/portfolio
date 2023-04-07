@@ -26,9 +26,9 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className="w-full p-4 md:px-[100px] lg:px-[150px] bg-[url('../public/assets/WorldMap.svg')] bg-no-repeat bg-cover bg-fill bg-center pb-20">
+    <div id='contact' className="w-full p-4 md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-contact.png')] bg-no-repeat bg-cover bg-fill bg-center pb-20">
       <div className="max-w-[1100px] m-auto w-full pt-10">
-        <p className="text-xl text-[#E1DD20] tracking-widest uppercase text-[#E1DD20]">
+        <p className="text-xl tracking-widest uppercase text-[#64ffda]">
           Contact
         </p>
         <h2 className=" py-4 md:py-8 text-white">Get In Touch</h2>
@@ -47,7 +47,7 @@ const Contact = () => {
                       Name
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300 bg-black/40 text-white"
+                      className="border-2 rounded-lg p-3 flex border-white bg-black/60 text-white"
                       type="text"
                       name="user_name"
                       required
@@ -58,7 +58,7 @@ const Contact = () => {
                       Email
                     </label>
                     <input
-                      className="border-2 rounded-lg p-3 flex border-gray-300 bg-black/40 text-white"
+                      className="border-2 rounded-lg p-3 flex border-white bg-black/70 text-white"
                       name="user_email"
                       type="email"
                       required
@@ -71,7 +71,7 @@ const Contact = () => {
                     Subject
                   </label>
                   <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300 bg-black/40 text-white"
+                    className="border-2 rounded-lg p-3 flex border-white bg-black/60 text-white"
                     name="subject"
                     type="text"
                     required
@@ -82,7 +82,7 @@ const Contact = () => {
                     Message
                   </label>
                   <textarea
-                    className="border-2 rounded-lg p-3 flex border-gray-300 bg-black/40 text-white"
+                    className="border-2 rounded-lg p-3 flex border-white bg-black/60 text-white"
                     rows="10"
                     name="message"
                     type="text"
@@ -90,7 +90,7 @@ const Contact = () => {
                   />
                 </div>
                 <button
-                  className="w-full bg-black/10 shadow-lg shadow-black font-mono text-center text-[#FFF600] p-3 mt-3 font-bold cursor-pointer border-solid border-2 border-[#FFF600] hover:bg-[#FFF600] hover:text-black hover:border-black"
+                  className="w-full bg-black/10 shadow-lg shadow-black font-mono text-center text-[#64ffda] p-3 mt-3 font-bold cursor-pointer border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/50"
                   type='submit'
                 >
                   Send Message

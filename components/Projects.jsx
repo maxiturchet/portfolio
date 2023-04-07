@@ -17,10 +17,10 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full bg-black lg:px-[100px] px-4 lg:px-[150px] py-16 m-auto border-y-2 border-[#222]"
+      className="w-full bg-[url('../public/assets/bg-projects.jpg')] bg-no-repeat bg-cover bg-fixed lg:px-[100px] px-4 lg:px-[150px] py-16 m-auto border-y-2 border-[#222]"
     >
       <div className="max-w-[1200px] m-auto">
-        <p className="text-xl tracking-widest uppercase text-[#E1DD20]">
+        <p className="text-xl tracking-widest uppercase text-[#64ffda]">
           Projects
         </p>
         <h2 className="py-10 text-white">{`What I've Built`}</h2>

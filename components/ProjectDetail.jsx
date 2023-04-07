@@ -20,9 +20,9 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
           <meta name="msapplication-TileColor" content="#da532c"/>
           <meta name="theme-color" content="#ffffff"/>
       </Head>
-      <div className='w-full text-white flex flex-col'>
-        <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
-          <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'/>
+      <div className='w-full h-full text-white flex flex-col'>
+        <div className='w-screen h-[30vh] lg:h-[36vh] relative'>
+          <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[36vh] bg-black/80 z-10'/>
           <Image
             className='absolute z-1'
             layout='fill'
@@ -36,19 +36,19 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
           </div>
         </div>
       
-        <div className='max-w-[1200px] mx-auto flex flex-col justify-between items-start p-4 md:px-8'>
-          <div className='flex flex-col lg:items-center justify-between lg:flex-row items-start p-2 md:px-8'>
+        <div className='max-w-[1400px] w-full h-full mx-auto flex flex-col justify-between items-start p-4 md:px-8 xl:px-0'>
+          <div className='w-full flex flex-col lg:items-center justify-between lg:flex-row items-start p-2 md:px-8'>
             <div className='flex flex-col w-full max-w-[800px] justify-start '>
-              <p className='uppercase text-xl tracking-widest text-[#E1DD20]'>Project</p>
+              <p className='uppercase text-xl tracking-widest text-[#64ffda]'>Project</p>
               <div className='flex justify-between items-center'>
                 <h2 className='py-4'>Overview</h2>
-                <div className='flex items-center justify-end pr-20'>
+                <div className='flex items-center justify-end lg:pr-20'>
                   
                   <Link href={urlCode}>
-                    <FaGithub className='text-[#E1DD20] text-xl cursor-pointer mr-4 hover:scale-110 hover:translate-y-[-4px] ease-in-out duration-300' />
+                    <FaGithub className='text-[#64ffda] text-xl cursor-pointer mr-4 hover:scale-110 hover:translate-y-[-4px] ease-in-out duration-300' />
                   </Link>
                   <Link href={urlDemo}>
-                    <AiOutlineExport className='text-[#E1DD20] text-2xl cursor-pointer hover:scale-110 hover:translate-y-[-4px] ease-in-out duration-300' />
+                    <AiOutlineExport className='text-[#64ffda] text-2xl cursor-pointer hover:scale-110 hover:translate-y-[-4px] ease-in-out duration-300' />
                   </Link>
                 </div>
               </div>
@@ -56,7 +56,7 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
                 This app was built Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt eaque blanditiis adipisci magnam, exercitationem facilis error sapiente dolores quibusdam repellendus, vitae quisquam voluptatem voluptate enim fugiat optio ut consequuntur? Sed.
               </p>
             </div>
-            <div className='w-full lg:max-w-[300px] flex items-center justify-around shadow-lg shadow-[#E1DD20] rounded-xl p-4 my-10 lg:my-0 '>
+            <div className='w-full lg:max-w-[300px] flex items-center justify-around shadow-lg shadow-[#64ffda] rounded-xl p-4 my-10 lg:my-0 '>
               <div className='w-full flex flex-col p-2'>
                 <p className='text-center text-white font-bold pb-2'>Technologies</p>
                 <div className='flex items-center justify-around lg:flex-col max-[450px]:flex-col'>
@@ -87,7 +87,7 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
           </div>
           <div className='pb-20 px-8 pt-5'>
             <Link href='/#projects'>
-              <p className='underline cursor-pointer hover:text-[#E1DD20]'>Back</p>
+              <p className='underline cursor-pointer hover:text-[#64ffda]'>Back</p>
             </Link>
             </div>
           </div>

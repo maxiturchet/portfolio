@@ -18,8 +18,8 @@ const MailSide = () => {
       show 
       ? "fixed flex flex-col cursor-pointer justify-between items-center right-1 lg:right-5 bottom-0 h-[300px] md:w-20 w-[74px] px-5" 
       : "fixed flex flex-col cursor-pointer justify-between items-center right-1 lg:right-5 bottom-0 h-[300px] md:w-20 w-[74px] px-5 transition ease-in-out opacity-0 duration-500"}>
-        <p className="text-l tracking-[.25em] w-[200px] ml-[4px] mt-5 text-white rotate-90 text-end hover:scale-110 hover:text-[#FFF600]  ease-in-out duration-300">maxiturchet@gmail.com</p>
-        <div className="w-[1px] h-[90px] bg-[#FFF600] mt-24"></div>
+        <p className="text-l opacity-80 tracking-[.25em] w-[200px] ml-[4px] mt-5 text-white rotate-90 text-end hover:scale-110 hover:opacity-100 ease-in-out duration-300">maxiturchet@gmail.com</p>
+        <div className="w-[1px] h-[90px] bg-[#64ffda] mt-24"></div>
     </div>
   )
 }
