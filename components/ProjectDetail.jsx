@@ -36,9 +36,9 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
           </div>
         </div>
       
-        <div className='max-w-[1200px] mx-auto p-2 flex flex-col  justify-between items-start pt-8 px-8'>
-          <div className='max-w-[1200px] mx-auto p-2 flex flex-col lg:items-center justify-between lg:flex-row items-start pt-8 px-8'>
-            <div className='flex flex-col w-full max-w-[800px] justify-start'>
+        <div className='max-w-[1200px] mx-auto flex flex-col justify-between items-start p-4 md:px-8'>
+          <div className='flex flex-col lg:items-center justify-between lg:flex-row items-start p-2 md:px-8'>
+            <div className='flex flex-col w-full max-w-[800px] justify-start '>
               <p className='uppercase text-xl tracking-widest text-[#E1DD20]'>Project</p>
               <div className='flex justify-between items-center'>
                 <h2 className='py-4'>Overview</h2>

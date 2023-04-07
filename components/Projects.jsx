@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full bg-black px-[100px] lg:px-[150px] py-16 m-auto border-y-2 border-[#222]"
+      className="w-full bg-black lg:px-[100px] px-4 lg:px-[150px] py-16 m-auto border-y-2 border-[#222]"
     >
       <div className="max-w-[1200px] m-auto">
         <p className="text-xl tracking-widest uppercase text-[#E1DD20]">

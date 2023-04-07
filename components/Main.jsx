@@ -5,8 +5,8 @@ import IconsSide from "./IconsSide";
 
 const Main = () => {
   return (
-    <div className="w-full bg-[url('../public/assets/Bg1.svg')] bg-no-repeat bg-cover px-[100px] lg:px-[150px]">
-      <div className="max-w-[1000px] pr-10 w-full h-screen 2xl:ml-20 flex justify-center items-center">
+    <div className="w-full bg-[url('../public/assets/Bg1.svg')] bg-no-repeat bg-cover bg-fill bg-center lg:px-[100px] lg:px-[150px] p-4">
+      <div className="max-w-[1000px] lg:pr-10 w-full h-screen 2xl:ml-20 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-[#E1DD20]">
           {`LET'S MAKE LIFE EASIER`}

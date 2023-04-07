@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className='w-full py-4 m-auto bg-black  bg-[url("../public/assets/bgFooter.svg")] bg-no-repeat bg-cover'>
+    <div className='w-full py-4 m-auto bg-black  bg-[url("../public/assets/bgFooter.svg")] bg-no-repeat bg-cover bg-fill bg-center'>
       <div className="w-full flex flex-col justify-between md:flex-row md:justify-around items-center py-4 m-auto">
         <div className="hidden lg:flex flex-col items-start ">
           <div className="py-2 flex justify-start cursor-pointer text-white hover:text-[#FBFF00]">
