@@ -120,13 +120,13 @@ const Navbar = () => {
           className={
             nav
               ? "fixed left-0 top-0 w-[75%] sm:w-[55%] md:w-[45%] h-screen bg-[#111] px-6 pt-1 ease-in duration-500"
-              : "fixed left-[-100%] top-0 p-6 ease-in duration-500"
+              : "fixed left-[-100%] h-screen top-0 p-6 ease-in duration-500"
           }
         >
           <div className="flex w-full items-center justify-between">
             <div className="mt-3">
               <Image
-                src="/../public/assets/maxiturchet.png"
+                src="/assets/maxiturchet.png"
                 alt="logo"
                 width="90"
                 height="55"
