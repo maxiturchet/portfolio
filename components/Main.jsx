@@ -17,7 +17,7 @@ const Main = () => {
               Hi, I&apos;m <span className="text-[#64ffda]">Maxi Turchet</span>
             </h1>
             <h1 className="text-white">A Front-End Web Developer</h1>
-            <p className="text-xl font-medium py-4 text-white max-w-[800px]">
+            <p className="text-xl py-4 text-white max-w-[800px]">
               {`I'm a front-end web developer looking for my`}
               <span className="text-[#64ffda]"> first job in IT</span>. I live in{" "}
               <Link href="https://www.google.com/maps/place/Saladillo,+Provincia+de+Buenos+Aires/data=!4m2!3m1!1s0x95bde0ef3b84b891:0x1d125f0922737cec?sa=X&ved=2ahUKEwic1oaEz_z9AhXJgpUCHfuoDdMQ8gF6BAgKEAI">

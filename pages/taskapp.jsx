@@ -15,6 +15,7 @@ const taskapp = () => {
       tech='React JS'
       tech2='Css'
       tech3='React datepicker'
+      description="Tasks and events application made with React JS. It is possible to filter the tasks by 'done' and 'pending'. Events indicate the remaining days for the event."
     />
   )
 }

@@ -16,6 +16,7 @@ const calculator = () => {
         tech='React JS'
         tech2='Css'
         tech3='Math Js'
+        description="Calculator made in React JS."
       />
     </>
   )

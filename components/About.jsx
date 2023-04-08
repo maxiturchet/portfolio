@@ -19,21 +19,21 @@ const About = () => {
     >
       <div className="max-w-[1200px] md:h-screen h-full m-auto flex flex-col items-center xl:justify-between justify-around text-[#fff] xl:flex xl:flex-row">
         <div className="w-full p-5 xl:pr-20">
-          <p className="uppercase text-lg tracking-widest text-[#64ffda]">
+          <p className="uppercase text-lg lg:text-2xl tracking-widest text-[#64ffda]">
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="text-md py-2 text-gray-300">
+          <p className="text-md lg:text-xl py-2 text-gray-300">
             {`I'm a Front-End Developer located in Argentina. My interest in web development started back in 2020 when I moved to Saladillo and decided to take a Fullstack developer course. Since then I keep improving myself to get my first IT job.`}
           </p>
 
-          <p className="text-md py-2 text-gray-300">
+          <p className="text-md lg:text-xl py-2 text-gray-300">
             Well-organised person, problem solver, independent employee with
             high attention to detail. Fan of chess, fútbol(soccer) and
             literature. A family person and father of one boy.
           </p>
 
-          <p className="text-md pt-2 pb-10 underline cursor-pointer text-[#64ffda]">
+          <p className="text-md lg:text-lg pt-2 pb-10 underline cursor-pointer text-[#64ffda]">
             Check out some of my latest projects.
           </p>
         </div>
@@ -52,7 +52,7 @@ const About = () => {
               <Image
                 className={
                   mouseEnter
-                    ? "absolute z-40 top-0 max-[500px]:left-[4%] max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
+                    ? "absolute z-40 top-0 max-[500px]:right-[13%] max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
                     : "hidden absolute top-0 max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
                 }
                 onMouseLeave={handleMouseLeave}

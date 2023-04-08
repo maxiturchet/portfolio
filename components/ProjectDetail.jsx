@@ -5,7 +5,7 @@ import { FaGithub } from 'react-icons/fa'
 import { AiOutlineExport } from 'react-icons/ai'
 import Head from 'next/head'
 
-const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCode, urlDemo }) => {
+const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCode, urlDemo, description }) => {
   return (
     <>
       <Head>
@@ -30,20 +30,19 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
             src={bgimage} 
             alt='bg'
           />
-          <div className='absolute top-[70%] max-w-[1200px] w-full left-[50%] right-[50%] translate-y-[-50%] translate-x-[-50%] text-white z-10 p-2'>
+          <div className='absolute top-[70%] max-w-[1400px] w-full left-[50%] right-[50%] translate-y-[-50%] translate-x-[-50%] text-white z-10 p-2'>
               <h2 className='py-2'>{title}</h2>
               <h3>{tech} / {tech2}</h3>
           </div>
         </div>
       
-        <div className='max-w-[1400px] w-full h-full mx-auto flex flex-col justify-between items-start p-4 md:px-8 xl:px-0'>
+        <div className='max-w-[1400px] w-full h-full mx-auto flex flex-col justify-between items-start p-4 md:px-8 xl:px-0 xl:py-20'>
           <div className='w-full flex flex-col lg:items-center justify-between lg:flex-row items-start p-2 md:px-8'>
             <div className='flex flex-col w-full max-w-[800px] justify-start '>
               <p className='uppercase text-xl tracking-widest text-[#64ffda]'>Project</p>
               <div className='flex justify-between items-center'>
                 <h2 className='py-4'>Overview</h2>
                 <div className='flex items-center justify-end lg:pr-20'>
-                  
                   <Link href={urlCode}>
                     <FaGithub className='text-[#64ffda] text-xl cursor-pointer mr-4 hover:scale-110 hover:translate-y-[-4px] ease-in-out duration-300' />
                   </Link>
@@ -53,7 +52,7 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
                 </div>
               </div>
               <p className='pr-5'>
-                This app was built Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt eaque blanditiis adipisci magnam, exercitationem facilis error sapiente dolores quibusdam repellendus, vitae quisquam voluptatem voluptate enim fugiat optio ut consequuntur? Sed.
+                {description}
               </p>
             </div>
             <div className='w-full lg:max-w-[300px] flex items-center justify-around shadow-lg shadow-[#64ffda] rounded-xl p-4 my-10 lg:my-0 '>

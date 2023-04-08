@@ -4,17 +4,39 @@ import React, { useState, useEffect } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { CgClose } from "react-icons/cg";
 import { FaLinkedinIn, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#000");
+  const [linkColor, setLinkColor] = useState("#fff");
+  const router = useRouter();
+
+  useEffect(() => {
+    if (
+      router.asPath === "/youtubeClone" ||
+      router.asPath === "/gifos" ||
+      router.asPath === "/taskapp" ||
+      router.asPath === "/calculator" ||
+      router.asPath === "/gym"
+    ) {
+      setNavBg("transparent");
+      setLinkColor("#fff");
+    } else {
+      setNavBg("#000");
+      setLinkColor("#fff");
+    }
+  }, []);
 
   useEffect(() => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
+        setNavBg("#000");
       } else {
         setShadow(false);
+        setNavBg("transparent");
       }
     };
     window.addEventListener("scroll", handleShadow);
@@ -26,9 +48,10 @@ const Navbar = () => {
 
   return (
     <div
+      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-md shadow-[#64ffda] z-[100] ease-in-out duration-500"
+          ? "fixed w-full h-20 shadow-lg shadow-[#64ffda] z-[100] ease-in-out duration-500"
           : "fixed w-full h-20 z-[100]"
       }
     >
@@ -41,7 +64,10 @@ const Navbar = () => {
             height="55"
           />
         </Link>
-        <div className="md:w-2/3 max-w-[1100px]">
+        <div
+          style={{ color: `${linkColor}` }}
+          className="md:w-2/3 max-w-[1100px]"
+        >
           <ul className="hidden md:flex md:justify-around m-auto">
             <Link href="/">
               <li className=" text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
@@ -76,7 +102,13 @@ const Navbar = () => {
             <RxHamburgerMenu size={25} />
           </div>
         </div>
-          <a className="hidden md:flex text-[#64ffda] uppercase rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/40 shadow-md shadow-black rounded-xl uppercase items-center justify-center" href='https://drive.google.com/uc?id=1Ks3K9BXHQz9cHNaIsEQt5axH86IfLU9N&export=download' download>GET CV</a>
+        <a
+          className="hidden md:flex text-[#64ffda] uppercase rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/40 shadow-md shadow-black rounded-xl uppercase items-center justify-center"
+          href="https://drive.google.com/uc?id=1Ks3K9BXHQz9cHNaIsEQt5axH86IfLU9N&export=download"
+          download
+        >
+          GET CV
+        </a>
       </div>
 
       <div
@@ -144,22 +176,22 @@ const Navbar = () => {
                 Let's Connect
               </p>
               <div className="flex items-center justify-around my-8 w-full text-[#fff] px-[5%]">
-                <Link href='https://www.linkedin.com/in/maxiturchet/'>
+                <Link href="https://www.linkedin.com/in/maxiturchet/">
                   <div className="text-2xl cursor-pointer">
                     <FaLinkedinIn />
                   </div>
                 </Link>
-                <Link href='https://github.com/maxiturchet'>
+                <Link href="https://github.com/maxiturchet">
                   <div className="text-2xl cursor-pointer">
                     <FaGithub />
                   </div>
                 </Link>
-                <Link href='https://twitter.com/maxi_turchet'>
+                <Link href="https://twitter.com/maxi_turchet">
                   <div className="text-2xl cursor-pointer">
                     <FaTwitter />
                   </div>
                 </Link>
-                <Link href='https://www.instagram.com/maxiturchet/'>
+                <Link href="https://www.instagram.com/maxiturchet/">
                   <div className="text-2xl cursor-pointer">
                     <FaInstagram />
                   </div>
