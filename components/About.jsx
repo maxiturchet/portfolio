@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from 'next/link'
 
 const About = () => {
   const [mouseEnter, setMouseEnter] = useState(false);
@@ -33,9 +34,11 @@ const About = () => {
             literature. A family person and father of one boy.
           </p>
 
-          <p className="text-md lg:text-lg pt-2 pb-10 underline cursor-pointer text-[#64ffda]">
-            Check out some of my latest projects.
-          </p>
+          <Link href='/youtubeClone'>
+            <p className="text-md lg:text-lg pt-2 pb-10 underline cursor-pointer text-[#64ffda]">
+              Check out some of my latest projects.
+            </p>
+          </Link>
         </div>
 
         <div className="relative ">

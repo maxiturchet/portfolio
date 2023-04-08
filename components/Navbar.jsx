@@ -11,8 +11,8 @@ const Navbar = () => {
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("transparent");
   const [linkColor, setLinkColor] = useState("#fff");
+  const [carga, setCarga] = useState(false);
   const router = useRouter();
-  console.log(navBg)
 
   useEffect(() => {
     if (
@@ -28,6 +28,13 @@ const Navbar = () => {
       setNavBg("#transparent");
       setLinkColor("#fff");
     }
+  }, []);
+
+  useEffect(() => {
+    setCarga(false);
+    setTimeout(() => {
+      setCarga(true);
+    }, 2000);
   }, []);
 
   useEffect(() => {
@@ -52,8 +59,8 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-lg shadow-[#64ffda] z-[100] ease-in-out duration-500"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-20 shadow-lg shadow-[#64ffda] z-40 ease-in-out duration-500"
+          : "fixed w-full h-20 z-40"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-4 md:px-16 ">
@@ -70,27 +77,62 @@ const Navbar = () => {
           className="md:w-2/3 max-w-[1100px]"
         >
           <ul className="hidden md:flex md:justify-around m-auto">
-            <Link href="/" className="focus-within:underline focus-within:text-[#64ffda]">
+            <Link
+              href="/"
+              className={
+                carga
+                  ? "transition transform translate-y-0 ease-in duration-300 opacity-100 focus-within:underline focus-within:text-[#64ffda]"
+                  : "opacity-0 -translate-y-10"
+              }
+            >
               <li className="text-md uppercase  hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 focus-within:text-[#64ffda]">
                 Home
               </li>
             </Link>
-            <Link href="/#about" className="focus-within:underline focus-within:text-[#64ffda]">
+            <Link
+              href="/#about"
+              className={
+                carga
+                  ? "transition transform translate-y-0 ease-in duration-300 delay-75 opacity-100 focus-within:underline focus-within:text-[#64ffda]"
+                  : "opacity-0 -translate-y-10"
+              }
+            >
               <li className="text-md uppercase  hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 focus-within:text-[#64ffda]">
                 About
               </li>
             </Link>
-            <Link href="/#projects" className="focus-within:underline focus-within:text-[#64ffda]">
+            <Link
+              href="/#projects"
+              className={
+                carga
+                  ? "transition transform translate-y-0 ease-in duration-500 delay-100 opacity-100 focus-within:underline focus-within:text-[#64ffda]"
+                  : "opacity-0 -translate-y-10"
+              }
+            >
               <li className="text-md uppercase  hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 focus-within:text-[#64ffda]">
                 Projects
               </li>
             </Link>
-            <Link href="/#skills" className="focus-within:underline focus-within:text-[#64ffda]">
+            <Link
+              href="/#skills"
+              className={
+                carga
+                  ? "transition transform translate-y-0 ease-in duration-500 delay-150 opacity-100 focus-within:underline focus-within:text-[#64ffda]"
+                  : "opacity-0 -translate-y-10"
+              }
+            >
               <li className="text-md uppercase  hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 focus-within:text-[#64ffda]">
                 Skills
               </li>
             </Link>
-            <Link href="/#contact" className="focus-within:underline focus-within:text-[#64ffda]">
+            <Link
+              href="/#contact"
+              className={
+                carga
+                  ? "transition transform translate-y-0 ease-in duration-700 delay-200 opacity-100 focus-within:underline focus-within:text-[#64ffda]"
+                  : "opacity-0 -translate-y-10"
+              }
+            >
               <li className="text-md uppercase  hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 focus-within:text-[#64ffda]">
                 Contact
               </li>

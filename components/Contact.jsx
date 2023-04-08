@@ -26,12 +26,12 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className="w-full p-4 md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-contact.png')] bg-no-repeat bg-cover bg-fill bg-center pb-20">
+    <div id='contact' className="w-full md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-contact.png')] bg-no-repeat bg-cover bg-fill bg-center pb-20">
       <div className="max-w-[1100px] m-auto w-full pt-10">
-        <p className="text-xl tracking-widest uppercase text-[#64ffda]">
+        <p className="pt-20 text-xl tracking-widest uppercase text-[#64ffda]">
           Contact
         </p>
-        <h2 className=" py-4 md:py-8 text-white">Get In Touch</h2>
+        <h2 className="py-4 md:py-8 text-white">Get In Touch</h2>
 
         <div className="md:pt-4">
           <div className="col-span-3 max-w-[700px] m-auto h-auto lg:p-4 p-3 ">

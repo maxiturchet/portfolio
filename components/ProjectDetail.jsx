@@ -21,8 +21,8 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
           <meta name="theme-color" content="#ffffff"/>
       </Head>
       <div className='w-full h-full text-white flex flex-col'>
-        <div className='w-screen h-[30vh] lg:h-[36vh] relative'>
-          <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[36vh] bg-black/80 z-10'/>
+        <div className='w-full h-[30vh] lg:h-[40vh] relative'>
+          <div className='absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10'/>
           <Image
             className='absolute z-1'
             layout='fill'
@@ -31,15 +31,15 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
             alt='bg'
           />
           <div className='absolute top-[70%] max-w-[1400px] w-full left-[50%] right-[50%] translate-y-[-50%] translate-x-[-50%] text-white z-10 p-2'>
-              <h2 className='py-2'>{title}</h2>
-              <h3>{tech} / {tech2}</h3>
+              <h2 className='p-2'>{title}</h2>
+              <h3 className='p-2'>{tech} / {tech2}</h3>
           </div>
         </div>
       
-        <div className='max-w-[1400px] w-full h-full mx-auto flex flex-col justify-between items-start p-4 md:px-8 xl:px-0 xl:py-20'>
-          <div className='w-full flex flex-col lg:items-center justify-between lg:flex-row items-start p-2 md:px-8'>
+        <div className='max-w-[1400px] w-full h-full mx-auto flex flex-col justify-between items-start md:px-8 xl:px-0 xl:py-20'>
+          <div className='w-full flex flex-col lg:items-center justify-between lg:flex-row items-start p-4 md:px-8'>
             <div className='flex flex-col w-full max-w-[800px] justify-start '>
-              <p className='uppercase text-xl tracking-widest text-[#64ffda]'>Project</p>
+              <p className='uppercase text-xl tracking-widest text-[#64ffda] pt-10'>Project</p>
               <div className='flex justify-between items-center'>
                 <h2 className='py-4'>Overview</h2>
                 <div className='flex items-center justify-end lg:pr-20'>
@@ -84,7 +84,7 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
               </div>
             </div>
           </div>
-          <div className='pb-20 px-8 pt-5'>
+          <div className='pb-10 px-8 pt-5'>
             <Link href='/#projects'>
               <p className='underline cursor-pointer hover:text-[#64ffda]'>Back</p>
             </Link>
