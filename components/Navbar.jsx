@@ -9,9 +9,10 @@ import { useRouter } from "next/router";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#000");
+  const [navBg, setNavBg] = useState("transparent");
   const [linkColor, setLinkColor] = useState("#fff");
   const router = useRouter();
+  console.log(navBg)
 
   useEffect(() => {
     if (
@@ -24,7 +25,7 @@ const Navbar = () => {
       setNavBg("transparent");
       setLinkColor("#fff");
     } else {
-      setNavBg("#000");
+      setNavBg("#transparent");
       setLinkColor("#fff");
     }
   }, []);
@@ -33,7 +34,7 @@ const Navbar = () => {
     const handleShadow = () => {
       if (window.scrollY >= 90) {
         setShadow(true);
-        setNavBg("#000");
+        setNavBg("rgba(0, 0, 0, 0.9)");
       } else {
         setShadow(false);
         setNavBg("transparent");
@@ -69,28 +70,28 @@ const Navbar = () => {
           className="md:w-2/3 max-w-[1100px]"
         >
           <ul className="hidden md:flex md:justify-around m-auto">
-            <Link href="/">
-              <li className=" text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
+            <Link href="/" className="focus-within:underline focus-within:text-[#64ffda]">
+              <li className="text-md uppercase  hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 focus-within:text-[#64ffda]">
                 Home
               </li>
             </Link>
-            <Link href="/#about">
-              <li className=" text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
+            <Link href="/#about" className="focus-within:underline focus-within:text-[#64ffda]">
+              <li className="text-md uppercase  hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 focus-within:text-[#64ffda]">
                 About
               </li>
             </Link>
-            <Link href="/#projects">
-              <li className=" text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
+            <Link href="/#projects" className="focus-within:underline focus-within:text-[#64ffda]">
+              <li className="text-md uppercase  hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 focus-within:text-[#64ffda]">
                 Projects
               </li>
             </Link>
-            <Link href="/skills">
-              <li className=" text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
+            <Link href="/#skills" className="focus-within:underline focus-within:text-[#64ffda]">
+              <li className="text-md uppercase  hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 focus-within:text-[#64ffda]">
                 Skills
               </li>
             </Link>
-            <Link href="/#contact">
-              <li className="text-md uppercase text-[#fff] hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300">
+            <Link href="/#contact" className="focus-within:underline focus-within:text-[#64ffda]">
+              <li className="text-md uppercase  hover:text-[#64ffda] hover:translate-y-[-4px] ease-in-out duration-300 focus-within:text-[#64ffda]">
                 Contact
               </li>
             </Link>
