@@ -1,5 +1,5 @@
 import React from 'react'
-import calculatorImg from "../public/assets/calculator.png";
+import calculatorImg from "../public/assets/calculator.webp";
 import { FaCss3, FaReact } from 'react-icons/fa'
 import ProjectDetail from '@/components/ProjectDetail'
 

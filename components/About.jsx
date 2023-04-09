@@ -1,6 +1,18 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Link from 'next/link'
+import Link from "next/link";
+import { FaGithub, FaGitlab, FaNpm, FaReact, FaSass } from "react-icons/fa";
+import { BsGit } from "react-icons/bs";
+import {
+  SiMariadb,
+  SiMaterialdesignicons,
+  SiMongodb,
+  SiMui,
+  SiNextdotjs,
+  SiPostman,
+  SiTailwindcss,
+} from "react-icons/si";
+import { CgTrello } from "react-icons/cg";
 
 const About = () => {
   const [mouseEnter, setMouseEnter] = useState(false);
@@ -19,7 +31,7 @@ const About = () => {
       className="w-full  md:px-[100px] lg:px-[150px] bg-gradient-to-r from-teal-900 to-cyan-900 py-10"
     >
       <div className="max-w-[1200px] md:h-screen h-full m-auto flex flex-col items-center xl:justify-between justify-around text-[#fff] xl:flex xl:flex-row">
-        <div className="w-full p-5 xl:pr-20">
+        <div className="w-full p-5 max-[300px]:pb-40 pb-10 xl:pr-20">
           <p className="uppercase text-lg lg:text-2xl tracking-widest text-[#64ffda]">
             About
           </p>
@@ -34,19 +46,20 @@ const About = () => {
             literature. A family person and father of one boy.
           </p>
 
-          <Link href='/youtubeClone'>
-            <p className="text-md lg:text-lg pt-2 pb-10 underline cursor-pointer text-[#64ffda]">
-              Check out some of my latest projects.
-            </p>
+          <Link
+            href="/youtubeClone"
+            className="cursor-pointer w-1/2 text-md lg:text-lg pt-2 pb-20 underline  text-[#64ffda]"
+          >
+            Check out some of my latest projects.
           </Link>
         </div>
 
-        <div className="relative ">
+        <div className="relative">
           <div className="w-full ">
             <Image
               className="relative z-30 m-auto z-2 max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
               onMouseEnter={handleMouseEnter}
-              src="/assets/yo.png"
+              src="/assets/yo.webp"
               alt="yo"
               width="400"
               height="0"
@@ -59,12 +72,36 @@ const About = () => {
                     : "hidden absolute top-0 max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
                 }
                 onMouseLeave={handleMouseLeave}
-                src="/assets/hover.png"
+                src="/assets/hover.webp"
                 alt="yohover"
                 width="400"
                 height="0"
               />
-              <div className="z-0 max-[500px]:w-3/4 w-full h-full absolute border-2 border-solid border-white max-[500px]:top-[-8%] max-[500px]:right-[7%] top-[-10%] right-[-10%] shadow-lg shadow-white "></div>
+              <div className="pointer-events-none w-full flex justify-center">
+                <div
+                  className={
+                    mouseEnter
+                      ? "z-50 top-[90%] opacity-100 transition transform -translate-y-6   ease-in-out duration-700 absolute text-center bg-teal-950/90 text-teal-400 flex items-center justify-between  flex-wrap rounded-lg shadow-xl  shadow-teal-950 "
+                      : "z-50 top-[90%] opacity-0  transition transform -translate-y-0 ease-in-out absolute text-center bg-teal-950/90 text-teal-400 flex items-center justify-between flex-wrap rounded-lg shadow-xl  shadow-teal-950"
+                  }
+                >
+                  <SiNextdotjs className="p-1 sm:text-3xl text-2xl" />
+                  <FaReact className="p-1 sm:text-3xl text-2xl" />
+                  <SiTailwindcss className="p-1 sm:text-3xl text-2xl" />
+                  <SiMui className="p-1 sm:text-3xl text-2xl" />
+                  <FaGithub className="p-1 sm:text-3xl text-2xl" />
+                  <BsGit className="p-1 sm:text-3xl text-2xl" />
+                  <FaNpm className="p-1 sm:text-3xl text-2xl" />
+                  <SiMariadb className="p-1 sm:text-3xl text-2xl" />
+                </div>
+              </div>
+              <div
+                className={
+                  mouseEnter
+                    ? "z-0 max-[500px]:w-3/4 w-full h-full absolute border-2 border-solid border-white max-[500px]:top-[-8%] max-[500px]:right-[7%] top-[-10%] right-[-10%] shadow-2xl shadow-white"
+                    : "z-0 max-[500px]:w-3/4 w-full h-full absolute border-2 border-solid border-white max-[500px]:top-[-8%] max-[500px]:right-[7%] top-[-10%] right-[-10%] shadow-lg shadow-white"
+                }
+              ></div>
             </div>
           </div>
         </div>

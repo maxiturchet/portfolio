@@ -4,7 +4,7 @@ import { FaLinkedinIn, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full py-4 m-auto bg-[url('../public/assets/bg-projects.jpg')] bg-no-repeat bg-cover bg-fixed opacity-60">
+    <div className="w-full py-4 m-auto bg-[url('../public/assets/bg-projects.webp')] bg-no-repeat bg-cover bg-fixed opacity-60">
       <div className="w-full flex flex-col justify-between md:flex-row md:justify-around items-center p-4 m-auto">
         <div className="hidden lg:flex flex-col items-start ">
           <div className="py-2 flex justify-start cursor-pointer text-white hover:text-[#64ffda]">
@@ -23,7 +23,7 @@ const Footer = () => {
         <div className="flex flex-col justify-between items-center">
           <Image
             className="border-2 border-[#64ffda]"
-            src="/assets/maxiturchet.png"
+            src="/assets/maxiturchet.webp"
             width="100"
             height="0"
             alt="logo"

@@ -1,10 +1,10 @@
 import React from "react";
 import ProjectItem from "./ProjectItem";
-import youtubeClone from "../public/assets/youtube-clone.jpg";
-import gifos from "../public/assets/gifos.jpg";
-import calculator from "../public/assets/calculator.png";
-import gym from "../public/assets/gym.png";
-import taskapp from "../public/assets/taskapp.png";
+import youtubeClone from "../public/assets/youtube-clone.webp";
+import gifos from "../public/assets/gifos.webp";
+import calculator from "../public/assets/calculator.webp";
+import gym from "../public/assets/gym.webp";
+import taskapp from "../public/assets/taskapp.webp";
 import { FaReact } from "react-icons/fa";
 import {
   SiJavascript,
@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full bg-[url('../public/assets/bg-projects.jpg')] bg-no-repeat bg-cover bg-fixed md:px-[100px] px-4 lg:px-[150px] py-16 m-auto border-y-2 border-[#222]"
+      className="w-full bg-[url('../public/assets/bg-projects.webp')] bg-no-repeat bg-cover bg-fixed md:px-[100px] px-4 lg:px-[150px] py-16 m-auto border-y-2 border-[#222]"
     >
       <div className="max-w-[1200px] m-auto">
         <p className="pt-20 text-xl tracking-widest uppercase text-[#64ffda]">

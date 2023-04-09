@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import MailSide from "./MailSide";
 import IconsSide from "./IconsSide";
 
@@ -11,18 +10,24 @@ const Main = () => {
     setCarga(false);
     setTimeout(() => {
       setCarga(true);
-    }, 1000);
+    }, 500);
   }, []);
 
   return (
-    <div className="w-ful bg-[url('../public/assets/bg.png')] bg-no-repeat bg-cover bg-fixed p-4">
+    <div
+      className={
+        carga
+          ? "opacity-100 w-full bg-[url('../public/assets/bg.webp')] bg-no-repeat bg-cover bg-fixed p-4"
+          : "opacity-0"
+      }
+    >
       <div className="max-w-[1200px] md:px-[100px] lg:px-[150px] lg:pr-10 w-full h-screen flex justify-center items-center">
         <div className="flex justify-between items-center ">
           <div>
             <p
               className={
                 carga
-                  ? "transition transform translate-y-0 ease-in duration-300 opacity-100 uppercase text-md tracking-widest text-[#64ffda]"
+                  ? "transition transform translate-y-0 ease-in duration-300 delay-500  opacity-100 uppercase text-md tracking-widest text-[#64ffda]"
                   : "opacity-0 translate-y-10"
               }
             >
@@ -31,7 +36,7 @@ const Main = () => {
             <h1
               className={
                 carga
-                  ? "transition transform translate-y-0 ease-in duration-700 delay-100 opacity-100 py-4 text-white"
+                  ? "transition transform translate-y-0 ease-in duration-700 delay-700 opacity-100 py-4 text-white"
                   : "opacity-0 translate-y-10"
               }
             >
@@ -40,7 +45,7 @@ const Main = () => {
             <h1
               className={
                 carga
-                  ? "transition transform translate-y-0 ease-in duration-700 delay-100 opacity-100 py-4 text-white"
+                  ? "transition transform translate-y-0 ease-in duration-700 delay-700 opacity-100 py-4 text-white"
                   : "opacity-0 translate-y-10"
               }
             >
@@ -49,7 +54,7 @@ const Main = () => {
             <p
               className={
                 carga
-                  ? "transition transform translate-y-0 ease-in duration-700 delay-500 opacity-100 text-xl py-4 text-white max-w-[800px]"
+                  ? "transition transform translate-y-0 ease-in duration-700 delay-1000 opacity-100 text-xl py-4 text-white max-w-[800px]"
                   : "opacity-0 translate-y-10"
               }
             >
@@ -64,15 +69,6 @@ const Main = () => {
               <span className="text-[#64ffda]"> to solve problems</span> through
               technology.
             </p>
-          </div>
-          <div>
-            <Image
-              className="hidden"
-              src="/assets/mano.png"
-              width="400"
-              height="0"
-              alt="mano"
-            />
           </div>
         </div>
       </div>

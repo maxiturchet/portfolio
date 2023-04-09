@@ -1,5 +1,5 @@
 import React from 'react'
-import taskImg from '../public/assets/taskapp.png'
+import taskImg from '../public/assets/taskapp.webp'
 import { FaCss3, FaReact } from 'react-icons/fa'
 import ProjectDetail from '@/components/ProjectDetail'
 

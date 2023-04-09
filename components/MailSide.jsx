@@ -9,7 +9,7 @@ const MailSide = () => {
     setCarga(false);
     setTimeout(() => {
       setCarga(true);
-    }, 1000);
+    }, 1200);
   }, []);
 
   const controlMail = () => {

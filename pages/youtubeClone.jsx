@@ -1,5 +1,5 @@
 import React from 'react'
-import youtubeImg from '../public/assets/youtube-clone.jpg'
+import youtubeImg from '../public/assets/youtube-clone.webp'
 import { SiMui } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
 import ProjectDetail from '@/components/ProjectDetail'

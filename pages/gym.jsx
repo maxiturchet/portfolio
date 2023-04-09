@@ -1,5 +1,5 @@
 import React from 'react'
-import gymImg from "../public/assets/gymbg.png";
+import gymImg from "../public/assets/gymbg.webp";
 import { SiMui } from 'react-icons/si'
 import { FaReact } from 'react-icons/fa'
 import ProjectDetail from '@/components/ProjectDetail'

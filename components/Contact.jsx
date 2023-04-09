@@ -26,7 +26,7 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className="w-full md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-contact.png')] bg-no-repeat bg-cover bg-fill bg-center pb-20">
+    <div id='contact' className="w-full md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-contact.webp')] bg-no-repeat bg-cover bg-fill bg-center pb-20">
       <div className="max-w-[1100px] m-auto w-full pt-10">
         <p className="pt-20 text-xl tracking-widest uppercase text-[#64ffda]">
           Contact

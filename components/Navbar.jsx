@@ -60,13 +60,19 @@ const Navbar = () => {
       className={
         shadow
           ? "fixed w-full h-20 shadow-lg shadow-[#64ffda] z-40 ease-in-out duration-500"
-          : "fixed w-full h-20 z-40"
+          : "fixed w-full h-20 z-40 ease-in-out duration-500"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-4 md:px-16 ">
+      <div
+        className={
+          carga
+            ? "transition transform translate-y-0 ease-in duration-300 opacity-100 flex justify-between items-center w-full h-full px-4 md:px-16 "
+            : "opacity-0 -translate-y-10"
+        }
+      >
         <Link href="/">
           <Image
-            src="/assets/maxiturchet.png"
+            src="/assets/maxiturchet.webp"
             alt="logo"
             width="100"
             height="55"
@@ -146,7 +152,11 @@ const Navbar = () => {
           </div>
         </div>
         <a
-          className="hidden md:flex text-[#64ffda] uppercase rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/40 shadow-md shadow-black rounded-xl uppercase items-center justify-center"
+          className={
+            carga
+              ? "transition transform translate-y-0 ease-in duration-300 opacity-100 hidden md:flex text-[#64ffda] uppercase rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/40 shadow-md shadow-black rounded-xl uppercase items-center justify-center "
+              : "opacity-0 -translate-y-10"
+          }
           href="https://drive.google.com/uc?id=1Ks3K9BXHQz9cHNaIsEQt5axH86IfLU9N&export=download"
           download
         >
@@ -169,7 +179,7 @@ const Navbar = () => {
           <div className="flex w-full items-center justify-between">
             <div className="mt-3">
               <Image
-                src="/assets/maxiturchet.png"
+                src="/assets/maxiturchet.webp"
                 alt="logo"
                 width="90"
                 height="55"

@@ -10,7 +10,7 @@ const IconsSide = () => {
     setCarga(false);
     setTimeout(() => {
       setCarga(true);
-    }, 1000);
+    }, 1200);
   }, []);
 
   const controlIcons = () => {

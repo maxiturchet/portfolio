@@ -1,5 +1,5 @@
 import React from 'react'
-import gifosImg from "../public/assets/gifos.jpg";
+import gifosImg from "../public/assets/gifos.webp";
 import { FaCss3} from 'react-icons/fa'
 import ProjectDetail from '@/components/ProjectDetail'
 import { SiJavascript } from 'react-icons/si';
