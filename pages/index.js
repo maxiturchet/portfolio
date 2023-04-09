@@ -52,7 +52,7 @@ export default function Home() {
           <div className=" bg-black fixed top-0 w-screen h-screen flex items-center justify-center z-50">
             <Image
               className="animate-pulse"
-              src="/assets/maxiturchet.png"
+              src="/assets/maxiturchet.webp"
               alt="logo"
               width="100"
               height="55"

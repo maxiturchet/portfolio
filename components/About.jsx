@@ -28,7 +28,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full  md:px-[100px] lg:px-[150px] bg-gradient-to-r from-teal-900 to-cyan-900 py-10"
+      className="w-full md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-about.webp')] bg-no-repeat bg-cover bg-fill bg-center py-10"
     >
       <div className="max-w-[1200px] md:h-screen h-full m-auto flex flex-col items-center xl:justify-between justify-around text-[#fff] xl:flex xl:flex-row">
         <div className="w-full p-5 max-[300px]:pb-40 pb-10 xl:pr-20">
@@ -36,11 +36,11 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="text-md lg:text-xl py-2 text-gray-300">
+          <p className="text-md lg:text-xl py-2 text-white">
             {`I'm a Front-End Developer located in Argentina. My interest in web development started back in 2020 when I moved to Saladillo and decided to take a Fullstack developer course. Since then I keep improving myself to get my first IT job.`}
           </p>
 
-          <p className="text-md lg:text-xl py-2 text-gray-300">
+          <p className="text-md lg:text-xl py-2 text-white">
             Well-organised person, problem solver, independent employee with
             high attention to detail. Fan of chess, fútbol(soccer) and
             literature. A family person and father of one boy.
@@ -48,7 +48,7 @@ const About = () => {
 
           <Link
             href="/youtubeClone"
-            className="cursor-pointer w-1/2 text-md lg:text-lg pt-2 pb-20 underline  text-[#64ffda]"
+            className="cursor-pointer w-1/2 text-md lg:text-lg pt-2 underline  text-[#64ffda]"
           >
             Check out some of my latest projects.
           </Link>
