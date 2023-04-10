@@ -40,7 +40,7 @@ const Main = () => {
                   : "opacity-0 translate-y-10"
               }
             >
-              Hi, I&apos;m <span className="text-[#64ffda]">Maxi Messi</span>
+              Hi, I&apos;m <span className="text-[#64ffda]">Maxi Turchet</span>
             </h1>
             <h1
               className={
