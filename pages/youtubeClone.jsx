@@ -16,7 +16,7 @@ const youtubeClone = () => {
       tech='React JS'
       tech2='Material UI'
       tech3='Rapid API'
-      description='Clon de Youtube realizado en React Js llamando a la API de Youtube v3 de RapidAPI. Para los estilos se utilizó Material UI. En la página se pueden buscar videos, ver los videos que son tendencias y también reproducirlos. Además se puede ingresar a los canales que tienen alojados los videos.'
+      description="Youtube clone made in React Js calling RapidAPI's Youtube v3 API. Material UI was used for the styles. On the page you can search for videos, see the videos that are trending and also play them. You can also enter the channels that have hosted the videos."
     />
   )
 }

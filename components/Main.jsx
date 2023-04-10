@@ -9,13 +9,15 @@ const Main = () => {
   const [carga, setCarga] = useState(false);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
-
+  console.log(router.asPath)
   useEffect(() => {
     if (router.asPath === "/") {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
       }, [1000]);
+    }else{
+      setLoading(false);
     }
   }, []);
 
