@@ -22,7 +22,7 @@ const Main = () => {
       }
     >
       <div className="max-w-[1200px] min-h-[800px] md:px-[100px] lg:px-[150px] w-full h-screen flex justify-center items-center p-8 md:p-2">
-        <div className="flex justify-between items-center ">
+        <div className="flex justify-between items-center">
           <div>
             <p
               className={
