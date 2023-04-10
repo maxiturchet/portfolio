@@ -59,7 +59,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-lg shadow-[#64ffda] z-40 ease-in-out duration-500"
+          ? "fixed z-40 w-full h-20 shadow-lg shadow-[#64ffda] z-40 ease-in-out duration-500 w-full"
           : "fixed w-full h-20 z-40"
       }
     >
@@ -72,10 +72,15 @@ const Navbar = () => {
       >
         <Link href="/" aria-label="logo">
           <Image
+            priority={true}
             src="/assets/maxiturchet.webp"
             alt="logo"
             width="100"
             height="55"
+            style={{
+              width: "auto",
+              height: "auto",
+            }}
           />
         </Link>
         <div
@@ -164,24 +169,29 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[55%] md:w-[45%] h-screen bg-[#111] px-6 pt-1 ease-in duration-500"
-              : "fixed left-[-100%] h-screen top-0 p-6 ease-in duration-500"
+              ? "max-[350px]:w-full fixed left-0 top-0 w-[75%] sm:w-[55%] md:w-[45%] h-full bg-[#111] px-6 pt-1 ease-in duration-500"
+              : "max-[350px]:w-full fixed left-[-100%] h-full top-0 p-6 ease-in duration-500"
           }
         >
           <div className="flex w-full items-center justify-between">
             <div className="mt-3">
               <Image
+                priority={true}
                 src="/assets/maxiturchet.webp"
                 alt="logo"
-                width="90"
+                width="100"
                 height="55"
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
               />
             </div>
             <div className="p-3 cursor-pointer text-[#fff]">
               <CgClose onClick={handleNav} size={20} />
             </div>
           </div>
-          <div className="h-[87%] flex flex-col justify-around">
+          <div className="max-[500px]:h-[80%] h-[87%] flex flex-col justify-around">
             <div className="border-b border-[#64ffda] my-4">
               <p className="w-[85%] md:w-[90%] pb-4 text-[#64ffda]">
                 Let&apos;s solved problems.
@@ -189,22 +199,22 @@ const Navbar = () => {
             </div>
             <div className="py-2 sm:py-6 flex-col">
               <ul className="uppercase text-[#fff]">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="max-[500px]:p-2 py-4 text-sm">
                   <Link href="/" aria-label="Home">
                     Home
                   </Link>
                 </li>
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="max-[500px]:p-2 py-4 text-sm">
                   <Link href="/#about" aria-label="About">
                     About
                   </Link>
                 </li>
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="max-[500px]:p-2 py-4 text-sm">
                   <Link href="/#projects" aria-label="Projects">
                     Projects
                   </Link>
                 </li>
-                <li onClick={() => setNav(false)} className="py-6 text-sm">
+                <li onClick={() => setNav(false)} className="max-[500px]:p-2 py-6 text-sm">
                   <Link href="/#contact" aria-label="Contact">
                     Contact
                   </Link>
@@ -215,17 +225,17 @@ const Navbar = () => {
               <p className="uppercase tracking-widest text-[#64ffda]">
                 Let's Connect
               </p>
-              <div className="flex items-center justify-around my-8 w-full text-[#fff] px-[5%]">
+              <div className="max-[500px]:p-2 flex items-center justify-around my-8 w-full text-[#fff] px-[5%]">
                 <Link
                   href="https://www.linkedin.com/in/maxiturchet/"
                   aria-label="Linkedin"
                 >
-                  <div className="text-2xl cursor-pointer">
+                  <div className="max-[500px]:text-lg text-2xl cursor-pointer">
                     <FaLinkedinIn />
                   </div>
                 </Link>
                 <Link href="https://github.com/maxiturchet" aria-label="Github">
-                  <div className="text-2xl cursor-pointer">
+                  <div className="max-[500px]:text-lg text-2xl cursor-pointer">
                     <FaGithub />
                   </div>
                 </Link>
@@ -233,7 +243,7 @@ const Navbar = () => {
                   href="https://twitter.com/maxi_turchet"
                   aria-label="Twitter"
                 >
-                  <div className="text-2xl cursor-pointer">
+                  <div className="max-[500px]:text-lg text-2xl cursor-pointer">
                     <FaTwitter />
                   </div>
                 </Link>
@@ -241,7 +251,7 @@ const Navbar = () => {
                   href="https://www.instagram.com/maxiturchet/"
                   aria-label="Instagram"
                 >
-                  <div className="text-2xl cursor-pointer">
+                  <div className="max-[500px]:text-lg text-2xl cursor-pointer">
                     <FaInstagram />
                   </div>
                 </Link>

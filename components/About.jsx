@@ -46,27 +46,37 @@ const About = () => {
         </div>
 
         <div className="relative">
-          <div className="w-full">
+          <div className="w-full max-[350px]:p-2">
             <Image
-              className="relative z-30 m-auto z-2 max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
+              className="relative z-30 m-auto z-2 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
               onMouseEnter={handleMouseEnter}
               src="/assets/yo.webp"
               alt="yo"
-              width="400"
-              height="0"
+              priority={true}
+              width={400}
+              height={332}
+              style={{
+                width:"auto",
+                height:"auto",
+              }}
             />
             <div classname="relative">
               <Image
                 className={
                   mouseEnter
-                    ? "invisible md:visible absolute z-40 top-0 max-[500px]:right-[13%] max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
-                    : "hidden absolute top-0 max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
+                    ? "invisible md:visible absolute z-40 top-0 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
+                    : "hidden absolute top-0 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
                 }
                 onMouseLeave={handleMouseLeave}
                 src="/assets/hover.webp"
                 alt="yohover"
-                width="400"
-                height="0"
+                priority={true}
+                width={400}
+                height={332}
+                style={{
+                  width: "auto",
+                  height: "auto",
+                }}
               />
               <div className="pointer-events-none w-full flex justify-center">
                 <div
@@ -89,8 +99,8 @@ const About = () => {
               <div
                 className={
                   mouseEnter
-                    ? "z-0 max-[500px]:w-3/4 w-full h-full absolute border-2 border-solid border-white max-[500px]:top-[-8%] max-[500px]:right-[7%] top-[-10%] right-[-10%] shadow-2xl shadow-white"
-                    : "z-0 max-[500px]:w-3/4 w-full h-full absolute border-2 border-solid border-white max-[500px]:top-[-8%] max-[500px]:right-[7%] top-[-10%] right-[-10%] shadow-lg shadow-white"
+                    ? "z-0  max-[350px]:hidden w-full h-full absolute border-2 border-solid border-white top-[-10%] right-[-10%] shadow-2xl shadow-white"
+                    : "z-0  max-[350px]:hidden w-full h-full absolute border-2 border-solid border-white top-[-10%] right-[-10%] shadow-lg shadow-white"
                 }
               ></div>
             </div>

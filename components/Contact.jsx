@@ -44,8 +44,8 @@ const Contact = () => {
                 onSubmit={handleSubmit}
                 className="flex flex-col items-center justify-between"
               >
-                <div className="grid md:grid-cols-2 w-full gap-4 md:py-2">
-                  <div className="flex flex-col">
+                <div className="flex max-[500px]:flex-col flex-row w-full md:py-2">
+                  <div className="flex flex-col w-full">
                     <label
                       for="name"
                       className="text-white uppercase text-sm py-2"
@@ -60,7 +60,7 @@ const Contact = () => {
                       required
                     />
                   </div>
-                  <div className="flex flex-col">
+                  <div className="flex flex-col w-full">
                     <label
                       for="email"
                       className="text-white uppercase text-sm py-2"
@@ -77,7 +77,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex flex-col  w-full">
+                <div className="flex flex-col w-full">
                   <label
                     for="subject"
                     className="text-white uppercase text-sm py-2"
