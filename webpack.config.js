@@ -1,18 +1,11 @@
-const ImageminPlugin = require('imagemin-webpack-plugin').default;
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const path = require('path');
+import imagemin from 'imagemin';
+import imageminWebp from 'imagemin-webp';
 
-module.exports = {
-  entry: './index.js',
-  output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist')
-  },
-  plugins: [
-     new CopyWebpackPlugin([{
-       from: 'img/**/**',
-       to: path.resolve(__dirname, 'dist')
-     }]),
-     new ImageminPlugin()
-  ]
-}
+await imagemin(['images/*.{jpg,png}'], {
+	destination: 'build/images',
+	plugins: [
+		imageminWebp({quality: 50})
+	]
+});
+
+console.log('Images optimized');

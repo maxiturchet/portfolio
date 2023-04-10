@@ -8,7 +8,10 @@ const Footer = () => {
     <div className="w-full py-4 m-auto bg-[url('../public/assets/bg-projects.webp')] bg-no-repeat bg-cover bg-fixed opacity-60">
       <div className="w-full flex flex-col justify-between md:flex-row md:justify-around items-center p-4 m-auto">
         <div className="hidden lg:flex flex-col items-start ">
-          <Link href="https://www.linkedin.com/in/maxiturchet/" aria-label="Linkedin">
+          <Link
+            href="https://www.linkedin.com/in/maxiturchet/"
+            aria-label="Linkedin"
+          >
             <div className="py-2 flex justify-start cursor-pointer text-white hover:text-[#64ffda]">
               <FaLinkedinIn className="text-xl" />
               <p className="text-sm sm:text-md pl-2 lg:pl-8">
@@ -39,7 +42,10 @@ const Footer = () => {
         </div>
         <div>
           <div className="flex flex-col justify-between items-center lg:hidden md:items-start">
-            <Link href="https://www.linkedin.com/in/maxiturchet/" aria-label="Linkedin">
+            <Link
+              href="https://www.linkedin.com/in/maxiturchet/"
+              aria-label="Linkedin"
+            >
               <div className="py-2 flex justify-start items-center md:items-start cursor-pointer text-white hover:text-[#64ffda]">
                 <FaLinkedinIn className="text-xl" />
                 <p className="text-sm sm:text-md pl-2 lg:pl-8">
@@ -66,7 +72,10 @@ const Footer = () => {
               </div>
             </div>
           </Link>
-          <Link href="https://www.instagram.com/maxiturchet/" aria-label="Instagram">
+          <Link
+            href="https://www.instagram.com/maxiturchet/"
+            aria-label="Instagram"
+          >
             <div className="pb-4 md:py-2 flex justify-start items-center cursor-pointer text-white hover:text-[#64ffda]">
               <FaInstagram className="text-xl" />
               <p className="text-sm sm:text-md pl-2 lg:pl-8">

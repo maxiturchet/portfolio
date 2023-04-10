@@ -38,12 +38,15 @@ const IconsSide = () => {
             : "opacity-0"
         }
       >
-        <Link href="https://www.linkedin.com/in/maxiturchet/" aria-label="Linkedin">
+        <Link
+          href="https://www.linkedin.com/in/maxiturchet/"
+          aria-label="Linkedin"
+        >
           <div className="text-lg text-[#fff] cursor-pointer  hover:scale-110 hover:text-[#64ffda] hover:translate-y-[-4px] hover:border-[#64ffda] hover:shadow-[#64ffda] hover:border-2 hover:border-solid  hover:drop-shadow-lg  hover:rounded-full ease-in duration-200 p-2 lg:text-xl ">
             <FaLinkedinIn />
           </div>
         </Link>
-        <Link href="https://github.com/maxiturche" aria-label="Github">
+        <Link href="https://github.com/maxiturchet" aria-label="Github">
           <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#64ffda] hover:translate-y-[-4px] ease-in duration-200 p-2 lg:text-xl hover:border-2 hover:border-solid hover:border-[#64ffda] hover:drop-shadow-lg hover:shadow-[#64ffda] hover:rounded-full after:shadow-2xl">
             <FaGithub />
           </div>
@@ -53,7 +56,10 @@ const IconsSide = () => {
             <FaTwitter />
           </div>
         </Link>
-        <Link href="https://www.instagram.com/maxiturchet/" aria-label="Instagram">
+        <Link
+          href="https://www.instagram.com/maxiturchet/"
+          aria-label="Instagram"
+        >
           <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#64ffda] hover:translate-y-[-4px] ease-in duration-300 p-2 lg:text-xl hover:border-2 hover:border-solid hover:border-[#64ffda] hover:drop-shadow-lg hover:shadow-[#64ffda] hover:rounded-full after:shadow-2xl">
             <FaInstagram />
           </div>

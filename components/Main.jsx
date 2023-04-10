@@ -7,7 +7,7 @@ import IconsSide from "./IconsSide";
 
 const Main = () => {
   const [carga, setCarga] = useState(false);
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
   const router = useRouter();
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const Main = () => {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
-      },[1000]);
+      }, [1000]);
     }
   }, []);
 

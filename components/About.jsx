@@ -55,7 +55,7 @@ const About = () => {
         </div>
 
         <div className="relative">
-          <div className="w-full ">
+          <div className="w-full">
             <Image
               className="relative z-30 m-auto z-2 max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
               onMouseEnter={handleMouseEnter}
@@ -68,7 +68,7 @@ const About = () => {
               <Image
                 className={
                   mouseEnter
-                    ? "absolute z-40 top-0 max-[500px]:right-[13%] max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
+                    ? "invisible md:visible absolute z-40 top-0 max-[500px]:right-[13%] max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
                     : "hidden absolute top-0 max-[500px]:w-3/4 border-2 border-solid border-[#64ffda] hover:shadow-lg hover:shadow-[#64ffda]"
                 }
                 onMouseLeave={handleMouseLeave}
@@ -81,7 +81,7 @@ const About = () => {
                 <div
                   className={
                     mouseEnter
-                      ? "z-50 top-[90%] opacity-100 transition transform -translate-y-6   ease-in-out duration-700 absolute text-center bg-teal-950/90 text-teal-400 flex items-center justify-between  flex-wrap rounded-lg shadow-xl  shadow-teal-950 "
+                      ? "invisible md:visible z-50 top-[90%] opacity-100 transition transform -translate-y-6   ease-in-out duration-700 absolute text-center bg-teal-950/90 text-teal-400 flex items-center justify-between  flex-wrap rounded-lg shadow-xl  shadow-teal-950 "
                       : "z-50 top-[90%] opacity-0  transition transform -translate-y-0 ease-in-out absolute text-center bg-teal-950/90 text-teal-400 flex items-center justify-between flex-wrap rounded-lg shadow-xl  shadow-teal-950"
                   }
                 >
