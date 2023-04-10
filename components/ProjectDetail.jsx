@@ -43,10 +43,10 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
               <div className='flex justify-between items-center'>
                 <h2 className='py-4'>Overview</h2>
                 <div className='flex items-center justify-end lg:pr-20'>
-                  <Link href={urlCode}>
+                  <Link href={urlCode} aria-label="Code">
                     <FaGithub className='text-[#64ffda] text-xl cursor-pointer mr-4 hover:scale-110 hover:translate-y-[-4px] ease-in-out duration-300' />
                   </Link>
-                  <Link href={urlDemo}>
+                  <Link href={urlDemo} aria-label="Demo">
                     <AiOutlineExport className='text-[#64ffda] text-2xl cursor-pointer hover:scale-110 hover:translate-y-[-4px] ease-in-out duration-300' />
                   </Link>
                 </div>
@@ -85,7 +85,7 @@ const ProjectDetail = ({ title, bgimage, icon, icon2, tech, tech2, tech3, urlCod
             </div>
           </div>
           <div className='pb-10 px-8 pt-5'>
-            <Link href='/#projects'>
+            <Link href='/#projects' aria-label="Back to Projects">
               <p className='underline cursor-pointer hover:text-[#64ffda]'>Back</p>
             </Link>
             </div>

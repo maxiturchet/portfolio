@@ -25,7 +25,7 @@ const ProjectItem = ({title, backgroundImg, icon, icon2, projectUrl}) => {
         </div>
         <div className='hidden group-hover:flex absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
           <button className='shadow-md shadow-black font-mono text-center p-3 text-[#64ffda] font-bold text-sm md:text-lg cursor-pointer border-solid border-2 border-[#64ffda] bg-black/80 hover:text-black hover:bg-[#64ffda]/70 hover:border-black m-auto'>
-            <Link href={projectUrl}>
+            <Link href={projectUrl} aria-label="More info">
               More info
             </Link>
           </button>

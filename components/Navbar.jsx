@@ -70,7 +70,7 @@ const Navbar = () => {
             : "opacity-0 -translate-y-10"
         }
       >
-        <Link href="/">
+        <Link href="/" aria-label="logo">
           <Image
             src="/assets/maxiturchet.webp"
             alt="logo"
@@ -85,6 +85,7 @@ const Navbar = () => {
           <ul className="hidden md:flex md:justify-around m-auto">
             <Link
               href="/"
+              aria-label="home"
               className={
                 carga
                   ? "transition transform translate-y-0 ease-in duration-300 opacity-100 focus-within:underline focus-within:text-[#64ffda]"
@@ -97,6 +98,7 @@ const Navbar = () => {
             </Link>
             <Link
               href="/#about"
+              aria-label="About"
               className={
                 carga
                   ? "transition transform translate-y-0 ease-in duration-300 delay-75 opacity-100 focus-within:underline focus-within:text-[#64ffda]"
@@ -109,6 +111,7 @@ const Navbar = () => {
             </Link>
             <Link
               href="/#projects"
+              aria-label="Projects"
               className={
                 carga
                   ? "transition transform translate-y-0 ease-in duration-500 delay-100 opacity-100 focus-within:underline focus-within:text-[#64ffda]"
@@ -121,6 +124,7 @@ const Navbar = () => {
             </Link>
             <Link
               href="/#contact"
+              aria-label="Contact"
               className={
                 carga
                   ? "transition transform translate-y-0 ease-in duration-700 delay-200 opacity-100 focus-within:underline focus-within:text-[#64ffda]"
@@ -185,22 +189,22 @@ const Navbar = () => {
             </div>
             <div className="py-2 sm:py-6 flex-col">
               <ul className="uppercase text-[#fff]">
-                <Link href="/">
+                <Link href="/" aria-label="Home">
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
                     Home
                   </li>
                 </Link>
-                <Link href="/#about">
+                <Link href="/#about" aria-label="About">
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
                     About
                   </li>
                 </Link>
-                <Link href="/#projects">
+                <Link href="/#projects" aria-label="Projects">
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
                     Projects
                   </li>
                 </Link>
-                <Link href="/#contact">
+                <Link href="/#contact" aria-label="Contact">
                   <li onClick={() => setNav(false)} className="py-6 text-sm">
                     Contact
                   </li>
@@ -212,22 +216,22 @@ const Navbar = () => {
                 Let's Connect
               </p>
               <div className="flex items-center justify-around my-8 w-full text-[#fff] px-[5%]">
-                <Link href="https://www.linkedin.com/in/maxiturchet/">
+                <Link href="https://www.linkedin.com/in/maxiturchet/" aria-label="Linkedin">
                   <div className="text-2xl cursor-pointer">
                     <FaLinkedinIn />
                   </div>
                 </Link>
-                <Link href="https://github.com/maxiturchet">
+                <Link href="https://github.com/maxiturchet" aria-label="Github">
                   <div className="text-2xl cursor-pointer">
                     <FaGithub />
                   </div>
                 </Link>
-                <Link href="https://twitter.com/maxi_turchet">
+                <Link href="https://twitter.com/maxi_turchet" aria-label="Twitter">
                   <div className="text-2xl cursor-pointer">
                     <FaTwitter />
                   </div>
                 </Link>
-                <Link href="https://www.instagram.com/maxiturchet/">
+                <Link href="https://www.instagram.com/maxiturchet/" aria-label="Instagram">
                   <div className="text-2xl cursor-pointer">
                     <FaInstagram />
                   </div>
