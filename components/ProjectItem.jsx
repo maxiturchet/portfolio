@@ -13,7 +13,7 @@ const ProjectItem = ({title, backgroundImg, icon, icon2, projectUrl}) => {
         width=''
         height='400'
       />
-      <div className='absolute left-0 top-0 hover:bg-black/80 w-full h-full'>
+      <div className='absolute left-0 top-0 hover:bg-black/80 w-full h-full rounded-xl'>
         <div className='hidden group-hover:flex absolute sm:top-[15%] md:left-[5%] sm:left-[15%] md:top-[12%] top-[12%] left-[5%]'>
           <h3 className='p-2 text-sm md:text-md rounded-lg bg-[#64ffda] text-black font-bold text-center'>{title}</h3>
         </div>

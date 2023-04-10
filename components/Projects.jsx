@@ -2,7 +2,7 @@ import React from "react";
 import ProjectItem from "./ProjectItem";
 import youtubeClone from "../public/assets/youtube-clone.webp";
 import gifos from "../public/assets/gifos.webp";
-import calculator from "../public/assets/calculator.webp";
+import calculator from "../public/assets/calculator2.webp";
 import gym from "../public/assets/gym.webp";
 import taskapp from "../public/assets/taskapp.webp";
 import { FaReact } from "react-icons/fa";

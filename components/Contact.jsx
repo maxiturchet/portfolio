@@ -26,8 +26,8 @@ const Contact = () => {
   };
 
   return (
-    <div id='contact' className="w-full md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-contact.webp')] bg-no-repeat bg-cover bg-fill bg-center pb-20">
-      <div className="max-w-[1100px] m-auto w-full pt-10">
+    <div id='contact' className="w-full md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-contact.webp')] bg-no-repeat bg-cover bg-fill bg-center">
+      <div className="max-w-[1100px] m-auto w-full p-4 md:p-2 ">
         <p className="pt-20 text-xl tracking-widest uppercase text-[#64ffda]">
           Contact
         </p>
@@ -90,7 +90,7 @@ const Contact = () => {
                   />
                 </div>
                 <button
-                  className="w-full bg-black/10 shadow-lg shadow-black font-mono text-center text-[#64ffda] p-3 mt-3 font-bold cursor-pointer border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/50"
+                  className="w-full bg-black/10 shadow-lg shadow-black font-mono text-center text-[#64ffda] p-3 mb-20 mt-3 font-bold cursor-pointer border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/50"
                   type='submit'
                 >
                   Send Message

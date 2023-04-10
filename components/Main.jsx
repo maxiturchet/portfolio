@@ -17,11 +17,11 @@ const Main = () => {
     <div
       className={
         carga
-          ? "opacity-100 w-full bg-[url('../public/assets/bg.webp')] bg-no-repeat bg-cover bg-fixed p-4"
+          ? "opacity-100 w-full bg-[url('../public/assets/bg.webp')] bg-no-repeat bg-cover bg-fill bg-center"
           : "opacity-0"
       }
     >
-      <div className="max-w-[1200px] md:px-[100px] lg:px-[150px] lg:pr-10 w-full h-screen flex justify-center items-center">
+      <div className="max-w-[1200px] min-h-[800px] md:px-[100px] lg:px-[150px] w-full h-screen flex justify-center items-center p-8 md:p-2">
         <div className="flex justify-between items-center ">
           <div>
             <p
