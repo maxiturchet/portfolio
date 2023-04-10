@@ -1,4 +1,5 @@
 import { useState, useEffect} from "react";
+import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
@@ -12,12 +13,15 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const [loading, setLoading] = useState(false);
-
+  const router = useRouter();
+  
   useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+    if(router.asPath === "/"){
+      setLoading(true);
+      setTimeout(() => {
+        setLoading(false);
+      }, 2000);
+    }
   }, []);
   return (
     <section>
