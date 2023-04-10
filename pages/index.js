@@ -1,28 +1,13 @@
-import { useState, useEffect} from "react";
-import { useRouter } from "next/router";
 import Head from "next/head";
-import Image from "next/image";
 import { Inter } from "next/font/google";
 import Main from "@/components/Main";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 
-
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [loading, setLoading] = useState(false);
-  const router = useRouter();
-  
-  useEffect(() => {
-    if(router.asPath === "/"){
-      setLoading(true);
-      setTimeout(() => {
-        setLoading(false);
-      }, 2000);
-    }
-  }, []);
   return (
     <section>
       <Head>
@@ -51,26 +36,10 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
       </Head>
-      <section>
-        {loading ? (
-          <div className=" bg-black fixed top-0 w-screen h-screen flex items-center justify-center z-50">
-            <Image
-              className="animate-pulse"
-              src="/assets/maxiturchet.webp"
-              alt="logo"
-              width="100"
-              height="55"
-            />
-          </div>
-        ) : (
-          <>
-            <Main />
-            <About />
-            <Projects />
-            <Contact />
-          </>
-        )}
-      </section>
+      <Main />
+      <About />
+      <Projects />
+      <Contact />
     </section>
   );
 }

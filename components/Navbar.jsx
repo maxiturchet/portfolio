@@ -189,26 +189,26 @@ const Navbar = () => {
             </div>
             <div className="py-2 sm:py-6 flex-col">
               <ul className="uppercase text-[#fff]">
-                <Link href="/" aria-label="Home">
-                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  <Link href="/" aria-label="Home">
                     Home
-                  </li>
-                </Link>
-                <Link href="/#about" aria-label="About">
-                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  </Link>
+                </li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  <Link href="/#about" aria-label="About">
                     About
-                  </li>
-                </Link>
-                <Link href="/#projects" aria-label="Projects">
-                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  </Link>
+                </li>
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  <Link href="/#projects" aria-label="Projects">
                     Projects
-                  </li>
-                </Link>
-                <Link href="/#contact" aria-label="Contact">
-                  <li onClick={() => setNav(false)} className="py-6 text-sm">
+                  </Link>
+                </li>
+                <li onClick={() => setNav(false)} className="py-6 text-sm">
+                  <Link href="/#contact" aria-label="Contact">
                     Contact
-                  </li>
-                </Link>
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
@@ -216,7 +216,10 @@ const Navbar = () => {
                 Let's Connect
               </p>
               <div className="flex items-center justify-around my-8 w-full text-[#fff] px-[5%]">
-                <Link href="https://www.linkedin.com/in/maxiturchet/" aria-label="Linkedin">
+                <Link
+                  href="https://www.linkedin.com/in/maxiturchet/"
+                  aria-label="Linkedin"
+                >
                   <div className="text-2xl cursor-pointer">
                     <FaLinkedinIn />
                   </div>
@@ -226,12 +229,18 @@ const Navbar = () => {
                     <FaGithub />
                   </div>
                 </Link>
-                <Link href="https://twitter.com/maxi_turchet" aria-label="Twitter">
+                <Link
+                  href="https://twitter.com/maxi_turchet"
+                  aria-label="Twitter"
+                >
                   <div className="text-2xl cursor-pointer">
                     <FaTwitter />
                   </div>
                 </Link>
-                <Link href="https://www.instagram.com/maxiturchet/" aria-label="Instagram">
+                <Link
+                  href="https://www.instagram.com/maxiturchet/"
+                  aria-label="Instagram"
+                >
                   <div className="text-2xl cursor-pointer">
                     <FaInstagram />
                   </div>

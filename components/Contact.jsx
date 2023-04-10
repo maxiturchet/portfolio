@@ -22,11 +22,14 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    e.target.reset()
+    e.target.reset();
   };
 
   return (
-    <div id='contact' className="w-full md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-contact.webp')] bg-no-repeat bg-cover bg-fill bg-center">
+    <div
+      id="contact"
+      className="w-full md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-contact.webp')] bg-no-repeat bg-cover bg-fill bg-center"
+    >
       <div className="max-w-[1100px] m-auto w-full p-4 md:p-2 ">
         <p className="pt-20 text-xl tracking-widest uppercase text-[#64ffda]">
           Contact
@@ -43,10 +46,14 @@ const Contact = () => {
               >
                 <div className="grid md:grid-cols-2 w-full gap-4 md:py-2">
                   <div className="flex flex-col">
-                    <label className="text-white uppercase text-sm py-2">
+                    <label
+                      for="name"
+                      className="text-white uppercase text-sm py-2"
+                    >
                       Name
                     </label>
                     <input
+                      id="name"
                       className="border-2 rounded-lg p-3 flex border-white bg-black/60 text-white"
                       type="text"
                       name="user_name"
@@ -54,10 +61,14 @@ const Contact = () => {
                     />
                   </div>
                   <div className="flex flex-col">
-                    <label className="text-white uppercase text-sm py-2">
+                    <label
+                      for="email"
+                      className="text-white uppercase text-sm py-2"
+                    >
                       Email
                     </label>
                     <input
+                      id="email"
                       className="border-2 rounded-lg p-3 flex border-white bg-black/70 text-white"
                       name="user_email"
                       type="email"
@@ -65,12 +76,16 @@ const Contact = () => {
                     />
                   </div>
                 </div>
-                
+
                 <div className="flex flex-col  w-full">
-                  <label className="text-white uppercase text-sm py-2">
+                  <label
+                    for="subject"
+                    className="text-white uppercase text-sm py-2"
+                  >
                     Subject
                   </label>
                   <input
+                    id="subject"
                     className="border-2 rounded-lg p-3 flex border-white bg-black/60 text-white"
                     name="subject"
                     type="text"
@@ -78,10 +93,14 @@ const Contact = () => {
                   />
                 </div>
                 <div className="flex flex-col py-2 w-full">
-                  <label className="text-white uppercase text-sm py-2">
+                  <label
+                    for="message"
+                    className="text-white uppercase text-sm py-2"
+                  >
                     Message
                   </label>
                   <textarea
+                    id="message"
                     className="border-2 rounded-lg p-3 flex border-white bg-black/60 text-white"
                     rows="10"
                     name="message"
@@ -91,7 +110,7 @@ const Contact = () => {
                 </div>
                 <button
                   className="w-full bg-black/10 shadow-lg shadow-black font-mono text-center text-[#64ffda] p-3 mb-20 mt-3 font-bold cursor-pointer border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/50"
-                  type='submit'
+                  type="submit"
                 >
                   Send Message
                 </button>

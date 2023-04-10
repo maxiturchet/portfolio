@@ -10,8 +10,8 @@ const ProjectItem = ({title, backgroundImg, icon, icon2, projectUrl}) => {
         className="rounded-xl opacity-70"
         src={backgroundImg}
         alt={title}
-        width=''
-        height='400'
+        width='400'
+        height='0'
       />
       <div className='absolute left-0 top-0 hover:bg-black/80 w-full h-full rounded-xl'>
         <div className='hidden group-hover:flex absolute sm:top-[15%] md:left-[5%] sm:left-[15%] md:top-[12%] top-[12%] left-[5%]'>
