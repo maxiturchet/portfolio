@@ -1,18 +1,9 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { FaGithub, FaGitlab, FaNpm, FaReact, FaSass } from "react-icons/fa";
+import { FaGithub, FaNpm, FaReact } from "react-icons/fa";
 import { BsGit } from "react-icons/bs";
-import {
-  SiMariadb,
-  SiMaterialdesignicons,
-  SiMongodb,
-  SiMui,
-  SiNextdotjs,
-  SiPostman,
-  SiTailwindcss,
-} from "react-icons/si";
-import { CgTrello } from "react-icons/cg";
+import { SiMariadb, SiMui, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 const About = () => {
   const [mouseEnter, setMouseEnter] = useState(false);
@@ -28,7 +19,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-about.webp')] bg-no-repeat bg-cover bg-fill bg-center py-10"
+      className="w-full md:px-[100px] lg:px-[150px] bg-[url('../public/assets/bg-about.webp')] bg-no-repeat bg-cover bg-fill bg-center bg-[length:2560px_1410px] py-10"
     >
       <div className="max-w-[1200px] md:h-screen h-full m-auto flex flex-col items-center xl:justify-between justify-around text-[#fff] xl:flex xl:flex-row">
         <div className="w-full p-5 max-[300px]:pb-40 pb-10 xl:pr-20">
