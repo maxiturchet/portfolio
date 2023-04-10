@@ -17,7 +17,7 @@ const Main = () => {
     <div
       className={
         carga
-          ? "opacity-100 w-full bg-[url('../public/assets/bg.webp')] bg-no-repeat bg-cover bg-fill bg-center"
+          ? "opacity-100 w-full bg-[url('../public/assets/bg.webp')] bg-no-repeat bg-cover bg-fixed"
           : "opacity-0"
       }
     >
