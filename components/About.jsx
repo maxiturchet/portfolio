@@ -82,8 +82,8 @@ const About = () => {
                 <div
                   className={
                     mouseEnter
-                      ? "invisible md:visible z-50 top-[90%] opacity-100 transition transform -translate-y-7 ease-in-out duration-700 absolute text-center bg-teal-950/90 text-teal-400 p-1 flex items-center justify-between rounded-lg shadow-xl shadow-teal-950 w-3/4"
-                      : "z-50 top-[90%] opacity-0  transition transform -translate-y-0 ease-in-out absolute text-center bg-teal-950/90 text-teal-400 flex items-center justify-between p-1 rounded-lg shadow-xl  shadow-teal-950"
+                      ? "invisible md:visible z-50 top-[90%] opacity-100 transition transform -translate-y-7 ease-in-out duration-700 absolute text-center bg-teal-950/90 text-teal-400 p-1 flex items-center justify-between rounded-lg shadow-xl shadow-teal-950"
+                      : "invisible md:visible z-50 top-[90%] opacity-0  transition transform -translate-y-0 ease-in-out absolute text-center bg-teal-950/90 text-teal-400 flex items-center justify-between p-1 rounded-lg shadow-xl shadow-teal-950"
                   }
                 >
                   <SiNextdotjs className="p-1 text-4xl " />
