@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaGithub, FaNpm, FaReact } from "react-icons/fa";
 import { BsGit } from "react-icons/bs";
-import { SiMariadb, SiMui, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { SiMariadb, SiMui, SiNextdotjs, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 const About = () => {
   const [mouseEnter, setMouseEnter] = useState(false);
@@ -82,25 +82,26 @@ const About = () => {
                 <div
                   className={
                     mouseEnter
-                      ? "invisible md:visible z-50 top-[90%] opacity-100 transition transform -translate-y-6   ease-in-out duration-700 absolute text-center bg-teal-950/90 text-teal-400 flex items-center justify-between  flex-wrap rounded-lg shadow-xl  shadow-teal-950 "
-                      : "z-50 top-[90%] opacity-0  transition transform -translate-y-0 ease-in-out absolute text-center bg-teal-950/90 text-teal-400 flex items-center justify-between flex-wrap rounded-lg shadow-xl  shadow-teal-950"
+                      ? "invisible md:visible z-50 top-[90%] opacity-100 transition transform -translate-y-7 ease-in-out duration-700 absolute text-center bg-teal-950/90 text-teal-400 p-1 flex items-center justify-between rounded-lg shadow-xl shadow-teal-950 w-3/4"
+                      : "z-50 top-[90%] opacity-0  transition transform -translate-y-0 ease-in-out absolute text-center bg-teal-950/90 text-teal-400 flex items-center justify-between p-1 rounded-lg shadow-xl  shadow-teal-950"
                   }
                 >
-                  <SiNextdotjs className="p-1 sm:text-3xl text-2xl" />
-                  <FaReact className="p-1 sm:text-3xl text-2xl" />
-                  <SiTailwindcss className="p-1 sm:text-3xl text-2xl" />
-                  <SiMui className="p-1 sm:text-3xl text-2xl" />
-                  <FaGithub className="p-1 sm:text-3xl text-2xl" />
-                  <BsGit className="p-1 sm:text-3xl text-2xl" />
-                  <FaNpm className="p-1 sm:text-3xl text-2xl" />
-                  <SiMariadb className="p-1 sm:text-3xl text-2xl" />
+                  <SiNextdotjs className="p-1 text-4xl " />
+                  <FaReact className="p-1 text-4xl " />
+                  <SiTailwindcss className="p-1 text-4xl " />
+                  <SiMui className="p-1 text-4xl " />
+                  <FaGithub className="p-1 text-4xl " />
+                  <BsGit className="p-1 text-4xl " />
+                  <FaNpm className="p-1 text-4xl " />
+                  <SiMariadb className="p-1 text-4xl " />
+                  <SiTypescript className="p-1 text-4xl" />
                 </div>
               </div>
               <div
                 className={
                   mouseEnter
-                    ? "z-0  max-[350px]:hidden w-full h-full absolute border-2 border-solid border-white top-[-10%] right-[-10%] shadow-2xl shadow-white"
-                    : "z-0  max-[350px]:hidden w-full h-full absolute border-2 border-solid border-white top-[-10%] right-[-10%] shadow-lg shadow-white"
+                    ? "z-0  max-[768px]:hidden w-full h-full absolute border-2 border-solid border-white top-[-10%] right-[-10%] shadow-2xl shadow-white"
+                    : "z-0  max-[768px]:hidden w-full h-full absolute border-2 border-solid border-white top-[-10%] right-[-10%] shadow-lg shadow-white"
                 }
               ></div>
             </div>
