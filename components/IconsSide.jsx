@@ -41,17 +41,26 @@ const IconsSide = () => {
         <Link
           href="https://www.linkedin.com/in/maxiturchet/"
           aria-label="Linkedin"
+          target="_blank"
         >
           <div className="text-lg text-[#fff] cursor-pointer  hover:scale-110 hover:text-[#64ffda] hover:translate-y-[-4px] hover:border-[#64ffda] hover:shadow-[#64ffda] hover:border-2 hover:border-solid  hover:drop-shadow-lg  hover:rounded-full ease-in duration-200 p-2 lg:text-xl ">
             <FaLinkedinIn />
           </div>
         </Link>
-        <Link href="https://github.com/maxiturchet" aria-label="Github">
+        <Link
+          href="https://github.com/maxiturchet"
+          aria-label="Github"
+          target="_blank"
+        >
           <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#64ffda] hover:translate-y-[-4px] ease-in duration-200 p-2 lg:text-xl hover:border-2 hover:border-solid hover:border-[#64ffda] hover:drop-shadow-lg hover:shadow-[#64ffda] hover:rounded-full after:shadow-2xl">
             <FaGithub />
           </div>
         </Link>
-        <Link href="https://twitter.com/maxi_turchet" aria-label="Twitter">
+        <Link
+          href="https://twitter.com/maxi_turchet"
+          aria-label="Twitter"
+          target="_blank"
+        >
           <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#64ffda] hover:translate-y-[-4px] ease-in duration-200 p-2 lg:text-xl hover:border-2 hover:border-solid hover:border-[#64ffda] hover:drop-shadow-lg hover:shadow-[#64ffda] hover:rounded-full after:shadow-2xl">
             <FaTwitter />
           </div>
@@ -59,6 +68,7 @@ const IconsSide = () => {
         <Link
           href="https://www.instagram.com/maxiturchet/"
           aria-label="Instagram"
+          target="_blank"
         >
           <div className="text-l text-[#fff] cursor-pointer hover:scale-110 hover:text-[#64ffda] hover:translate-y-[-4px] ease-in duration-300 p-2 lg:text-xl hover:border-2 hover:border-solid hover:border-[#64ffda] hover:drop-shadow-lg hover:shadow-[#64ffda] hover:rounded-full after:shadow-2xl">
             <FaInstagram />

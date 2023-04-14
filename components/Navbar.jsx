@@ -229,12 +229,13 @@ const Navbar = () => {
                 <Link
                   href="https://www.linkedin.com/in/maxiturchet/"
                   aria-label="Linkedin"
+                  target="_blank"
                 >
                   <div className="max-[500px]:text-lg text-2xl cursor-pointer">
                     <FaLinkedinIn />
                   </div>
                 </Link>
-                <Link href="https://github.com/maxiturchet" aria-label="Github">
+                <Link href="https://github.com/maxiturchet" aria-label="Github" target="_blank">
                   <div className="max-[500px]:text-lg text-2xl cursor-pointer">
                     <FaGithub />
                   </div>
@@ -242,6 +243,7 @@ const Navbar = () => {
                 <Link
                   href="https://twitter.com/maxi_turchet"
                   aria-label="Twitter"
+                  target="_blank"
                 >
                   <div className="max-[500px]:text-lg text-2xl cursor-pointer">
                     <FaTwitter />
@@ -250,6 +252,7 @@ const Navbar = () => {
                 <Link
                   href="https://www.instagram.com/maxiturchet/"
                   aria-label="Instagram"
+                  target="_blank"
                 >
                   <div className="max-[500px]:text-lg text-2xl cursor-pointer">
                     <FaInstagram />

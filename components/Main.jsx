@@ -9,14 +9,14 @@ const Main = () => {
   const [carga, setCarga] = useState(false);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
-  
+
   useEffect(() => {
     if (router.asPath === "/") {
       setLoading(true);
       setTimeout(() => {
         setLoading(false);
       }, [1000]);
-    }else{
+    } else {
       setLoading(false);
     }
   }, []);
@@ -92,8 +92,8 @@ const Main = () => {
                   <Link href="https://www.google.com/maps/place/Saladillo,+Provincia+de+Buenos+Aires/data=!4m2!3m1!1s0x95bde0ef3b84b891:0x1d125f0922737cec?sa=X&ved=2ahUKEwic1oaEz_z9AhXJgpUCHfuoDdMQ8gF6BAgKEAI">
                     <span className="text-[#64ffda]">Saladillo</span>
                   </Link>
-                  , Buenos Aires, Argentina. After a failed experience in
-                  Filmmaking I discovered that what I really like to do is
+                  , Buenos Aires, Argentina. After studying Cinema in La Plata I
+                  discovered that what I really like to do is
                   <span className="text-[#64ffda]">
                     {" "}
                     to solve problems
