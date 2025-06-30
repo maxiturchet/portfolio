@@ -38,7 +38,7 @@ const MailSide = () => {
         aria-label="Email"
         className={
           carga
-            ? "opacity-100 ease-in duration-500 delay-1000 text-[#64ffda] tracking-widest text-md opacity-80 w-[200px] ml-[2px] mt-20 rotate-90 text-end"
+            ? "ease-in duration-500 delay-1000 text-[#64ffda] tracking-widest text-md opacity-80 w-[200px] ml-[2px] mt-20 rotate-90 text-end"
             : "opacity-0"
         }
       >

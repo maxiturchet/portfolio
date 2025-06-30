@@ -17,7 +17,7 @@ const Projects = () => {
   return (
     <div
       id="projects"
-      className="w-full bg-[url('../public/assets/bg-projects.webp')] bg-no-repeat bg-contain bg-fixed bg-[length:2560px_1410px] md:px-[100px] px-4 lg:px-[150px] py-16 m-auto border-y-2 border-[#222]"
+      className="w-full bg-[url('../public/assets/bg-projects.webp')] bg-no-repeat bg-fixed bg-[length:2560px_1410px] md:px-[100px] px-4 lg:px-[150px] py-16 m-auto border-y-2 border-[#222]"
     >
       <div className="max-w-[1200px] m-auto">
         <p className="pt-20 text-xl tracking-widest uppercase text-[#64ffda]">

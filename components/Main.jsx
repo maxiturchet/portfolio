@@ -19,7 +19,7 @@ const Main = () => {
     } else {
       setLoading(false);
     }
-  }, []);
+  }, [router.asPath]);
 
   useEffect(() => {
     setCarga(false);

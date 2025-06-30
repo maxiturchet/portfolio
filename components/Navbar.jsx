@@ -28,7 +28,7 @@ const Navbar = () => {
       setNavBg("#transparent");
       setLinkColor("#fff");
     }
-  }, []);
+  }, [router.asPath]);
 
   useEffect(() => {
     setCarga(false);
@@ -59,7 +59,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed z-40 w-full h-20 shadow-lg shadow-[#64ffda] z-40 ease-in-out duration-500 w-full"
+          ? "fixed z-40 w-full h-20 shadow-lg shadow-[#64ffda] ease-in-out duration-500"
           : "fixed w-full h-20 z-40"
       }
     >
@@ -151,7 +151,7 @@ const Navbar = () => {
         <a
           className={
             carga
-              ? "transition transform translate-y-0 ease-in duration-300 opacity-100 hidden md:flex text-[#64ffda] uppercase rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/40 shadow-md shadow-black rounded-xl uppercase items-center justify-center "
+              ? "transition transform translate-y-0 ease-in duration-300 opacity-100 hidden md:flex text-[#64ffda] rounded-1 w-[100px] h-[40px] border-solid border-2 border-[#64ffda] hover:bg-[#64ffda]/40 shadow-md shadow-black rounded-xl uppercase items-center justify-center "
               : "opacity-0 -translate-y-10"
           }
           href="https://drive.google.com/uc?id=1Ks3K9BXHQz9cHNaIsEQt5axH86IfLU9N&export=download"
@@ -199,22 +199,34 @@ const Navbar = () => {
             </div>
             <div className="py-2 sm:py-6 flex-col">
               <ul className="uppercase text-[#fff]">
-                <li onClick={() => setNav(false)} className="max-[500px]:p-2 py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="max-[500px]:p-2 py-4 text-sm"
+                >
                   <Link href="/" aria-label="Home">
                     Home
                   </Link>
                 </li>
-                <li onClick={() => setNav(false)} className="max-[500px]:p-2 py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="max-[500px]:p-2 py-4 text-sm"
+                >
                   <Link href="/#about" aria-label="About">
                     About
                   </Link>
                 </li>
-                <li onClick={() => setNav(false)} className="max-[500px]:p-2 py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="max-[500px]:p-2 py-4 text-sm"
+                >
                   <Link href="/#projects" aria-label="Projects">
                     Projects
                   </Link>
                 </li>
-                <li onClick={() => setNav(false)} className="max-[500px]:p-2 py-6 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="max-[500px]:p-2 py-6 text-sm"
+                >
                   <Link href="/#contact" aria-label="Contact">
                     Contact
                   </Link>
@@ -235,7 +247,11 @@ const Navbar = () => {
                     <FaLinkedinIn />
                   </div>
                 </Link>
-                <Link href="https://github.com/maxiturchet" aria-label="Github" target="_blank">
+                <Link
+                  href="https://github.com/maxiturchet"
+                  aria-label="Github"
+                  target="_blank"
+                >
                   <div className="max-[500px]:text-lg text-2xl cursor-pointer">
                     <FaGithub />
                   </div>
